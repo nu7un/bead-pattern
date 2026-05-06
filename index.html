@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧩 拼豆图纸生成器</title>
+    <title>ð§© æ¼è±å¾çº¸çæå¨</title>
     <style>
         * {
             margin: 0;
@@ -406,100 +406,100 @@
 <body>
     <div class="container">
         <header>
-            <h1>🧩 拼豆图纸生成器</h1>
-            <p>Delta E 2000 精确颜色映射 | 完全离线运行</p>
-            <div class="offline-badge">离线模式</div>
+            <h1>ð§© æ¼è±å¾çº¸çæå¨</h1>
+            <p>Delta E 2000 ç²¾ç¡®é¢è²æ å° | å®å¨ç¦»çº¿è¿è¡</p>
+            <div class="offline-badge">ç¦»çº¿æ¨¡å¼</div>
         </header>
         
         <div class="grid">
             <div class="card">
-                <div class="card-title">📤 上传图片</div>
+                <div class="card-title">ð¤ ä¸ä¼ å¾ç</div>
                 <div class="upload-area" id="uploadArea">
-                    <div class="upload-icon">🖼️</div>
-                    <div class="upload-text">拖拽图片到这里</div>
-                    <div class="upload-hint">或点击选择文件 (支持 JPG/PNG/WebP，最大 50MB)</div>
+                    <div class="upload-icon">ð¼ï¸</div>
+                    <div class="upload-text">ææ½å¾çå°è¿é</div>
+                    <div class="upload-hint">æç¹å»éæ©æä»¶ (æ¯æ JPG/PNG/WebPï¼æå¤§ 50MB)</div>
                 </div>
                 <input type="file" id="fileInput" accept="image/*">
                 <div class="preview-container" id="previewContainer">
-                    <img id="previewImg" class="preview-img" alt="预览">
+                    <img id="previewImg" class="preview-img" alt="é¢è§">
                 </div>
             </div>
             
             <div class="card">
-                <div class="card-title">⚙️ 设置选项</div>
+                <div class="card-title">âï¸ è®¾ç½®éé¡¹</div>
                 <div class="controls">
                     <div class="control-group">
-                        <span class="control-label">品牌选择</span>
+                        <span class="control-label">åçéæ©</span>
                         <div class="radio-group">
                             <div class="radio-option">
                                 <input type="radio" name="brand" id="perler" value="perler" checked>
-                                <label for="perler">Perler Beads (57色)</label>
+                                <label for="perler">Perler Beads (57è²)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="brand" id="hama" value="hama">
-                                <label for="hama">Hama Beads (41色)</label>
+                                <label for="hama">Hama Beads (41è²)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="brand" id="artkal" value="artkal">
-                                <label for="artkal">ArtKal Beads (159色)</label>
+                                <label for="artkal">ArtKal Beads (159è²)</label>
                             </div>
                         </div>
                     </div>
                     
                     <div class="control-group">
                         <span class="control-label">
-                            网格尺寸 
-                            <span class="control-value" id="gridSizeValue">29 × 29</span>
+                            ç½æ ¼å°ºå¯¸ 
+                            <span class="control-value" id="gridSizeValue">29 Ã 29</span>
                         </span>
                         <div class="radio-group">
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g15" value="15">
-                                <label for="g15">15×15 (小)</label>
+                                <label for="g15">15Ã15 (å°)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g29" value="29" checked>
-                                <label for="g29">29×29 (中)</label>
+                                <label for="g29">29Ã29 (ä¸­)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g58" value="58">
-                                <label for="g58">58×58 (大)</label>
+                                <label for="g58">58Ã58 (å¤§)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g90" value="90">
-                                <label for="g90">90×90 (特大)</label>
+                                <label for="g90">90Ã90 (ç¹å¤§)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g120" value="120">
-                                <label for="g120">120×120 (超大)</label>
+                                <label for="g120">120Ã120 (è¶å¤§)</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="gridSize" id="g150" value="150">
-                                <label for="g150">150×150 (极限)</label>
+                                <label for="g150">150Ã150 (æé)</label>
                             </div>
                         </div>
                     </div>
                     
                     <div class="control-group">
-                        <span class="control-label">背景颜色</span>
+                        <span class="control-label">èæ¯é¢è²</span>
                         <div class="radio-group">
                             <div class="radio-option">
                                 <input type="radio" name="bgColor" id="bgWhite" value="#FFFFFF" checked>
-                                <label for="bgWhite">白色</label>
+                                <label for="bgWhite">ç½è²</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="bgColor" id="bgBlack" value="#000000">
-                                <label for="bgBlack">黑色</label>
+                                <label for="bgBlack">é»è²</label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" name="bgColor" id="bgGray" value="#808080">
-                                <label for="bgGray">灰色</label>
+                                <label for="bgGray">ç°è²</label>
                             </div>
                         </div>
                     </div>
                     
                     <div class="buttons">
                         <button class="btn btn-primary" id="generateBtn" disabled>
-                            ✨ 生成图纸
+                            â¨ çæå¾çº¸
                         </button>
                     </div>
                 </div>
@@ -507,19 +507,19 @@
         </div>
         
         <div class="card result-card" id="resultCard">
-            <div class="card-title">📊 预览结果</div>
+            <div class="card-title">ð é¢è§ç»æ</div>
             <div class="stats">
                 <div class="stat-item">
                     <div class="stat-value" id="statBrand">Perler</div>
-                    <div class="stat-label">品牌</div>
+                    <div class="stat-label">åç</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value" id="statGrid">29×29</div>
-                    <div class="stat-label">网格尺寸</div>
+                    <div class="stat-value" id="statGrid">29Ã29</div>
+                    <div class="stat-label">ç½æ ¼å°ºå¯¸</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value" id="statTotal">0</div>
-                    <div class="stat-label">总拼豆数</div>
+                    <div class="stat-label">æ»æ¼è±æ°</div>
                 </div>
             </div>
             
@@ -530,10 +530,10 @@
             <div class="download-section">
                 <div class="buttons">
                     <button class="btn btn-success" id="downloadPngBtn">
-                        📥 下载 PNG 图纸
+                        ð¥ ä¸è½½ PNG å¾çº¸
                     </button>
                     <button class="btn btn-primary" id="downloadListBtn">
-                        📋 下载材料清单
+                        ð ä¸è½½æææ¸å
                     </button>
                 </div>
             </div>
@@ -542,284 +542,284 @@
         </div>
         
         <footer>
-            拼豆图纸生成器 | 完全离线运行，无需上传您的图片
+            æ¼è±å¾çº¸çæå¨ | å®å¨ç¦»çº¿è¿è¡ï¼æ éä¸ä¼ æ¨çå¾ç
         </footer>
     </div>
     
     <div class="processing-overlay" id="processingOverlay">
         <div class="spinner"></div>
-        <div class="processing-text">正在生成图纸...</div>
+        <div class="processing-text">æ­£å¨çæå¾çº¸...</div>
     </div>
     
     <script>
-        // ========== 拼豆色卡数据 ==========
+        // ========== æ¼è±è²å¡æ°æ® ==========
         const BEAD_COLORS = {
             perler: [
-                { id: 'P001', name: '白色', hex: '#FFFFFF' },
-                { id: 'P002', name: '黑色', hex: '#1A1A1A' },
-                { id: 'P003', name: '灰色', hex: '#9E9E9E' },
-                { id: 'P004', name: '红色', hex: '#E53935' },
-                { id: 'P005', name: '深红', hex: '#C62828' },
-                { id: 'P006', name: '橙红', hex: '#FF5722' },
-                { id: 'P007', name: '橙色', hex: '#FF9800' },
-                { id: 'P008', name: '黄色', hex: '#FFEB3B' },
-                { id: 'P009', name: '柠檬黄', hex: '#FFEE58' },
-                { id: 'P010', name: '金色', hex: '#FFC107' },
-                { id: 'P011', name: '浅绿', hex: '#8BC34A' },
-                { id: 'P012', name: '绿色', hex: '#4CAF50' },
-                { id: 'P013', name: '深绿', hex: '#2E7D32' },
-                { id: 'P014', name: '青绿', hex: '#009688' },
-                { id: 'P015', name: '青色', hex: '#00BCD4' },
-                { id: 'P016', name: '天蓝', hex: '#03A9F4' },
-                { id: 'P017', name: '蓝色', hex: '#2196F3' },
-                { id: 'P018', name: '深蓝', hex: '#1565C0' },
-                { id: 'P019', name: '海军蓝', hex: '#0D47A1' },
-                { id: 'P020', name: '紫色', hex: '#9C27B0' },
-                { id: 'P021', name: '深紫', hex: '#6A1B9A' },
-                { id: 'P022', name: '品红', hex: '#E91E63' },
-                { id: 'P023', name: '粉色', hex: '#F48FB1' },
-                { id: 'P024', name: '浅粉', hex: '#F8BBD9' },
-                { id: 'P025', name: '玫瑰', hex: '#FFCDD2' },
-                { id: 'P026', name: '棕色', hex: '#795548' },
-                { id: 'P027', name: '深棕', hex: '#5D4037' },
-                { id: 'P028', name: '浅棕', hex: '#A1887F' },
-                { id: 'P029', name: '米色', hex: '#D7CCC8' },
-                { id: 'P030', name: '奶油', hex: '#FFF8E1' },
-                { id: 'P031', name: '象牙', hex: '#FFFFF0' },
-                { id: 'P032', name: '肉色', hex: '#FFCCBC' },
-                { id: 'P033', name: '肤色', hex: '#FFE0B2' },
-                { id: 'P034', name: '杏色', hex: '#FFCC80' },
-                { id: 'P035', name: '桃色', hex: '#FFAB91' },
-                { id: 'P036', name: '珊瑚', hex: '#FF7043' },
-                { id: 'P037', name: '酒红', hex: '#880E4F' },
-                { id: 'P038', name: '栗色', hex: '#AD1457' },
-                { id: 'P039', name: '酱色', hex: '#6D4C41' },
-                { id: 'P040', name: '咖啡', hex: '#4E342E' },
-                { id: 'P041', name: '可可', hex: '#3E2723' },
-                { id: 'P042', name: '藏青', hex: '#1A237E' },
-                { id: 'P043', name: '靛蓝', hex: '#283593' },
-                { id: 'P044', name: '薰衣草', hex: '#CE93D8' },
-                { id: 'P045', name: '淡紫', hex: '#E1BEE7' },
-                { id: 'P046', name: '薄荷', hex: '#A5D6A7' },
-                { id: 'P047', name: '松石绿', hex: '#80CBC4' },
-                { id: 'P048', name: '海蓝', hex: '#4DD0E1' },
-                { id: 'P049', name: '湖蓝', hex: '#4FC3F7' },
-                { id: 'P050', name: '天空蓝', hex: '#81D4FA' },
-                { id: 'P051', name: '浅蓝', hex: '#B3E5FC' },
-                { id: 'P052', name: '矢车菊', hex: '#90CAF9' },
-                { id: 'P053', name: '雾蓝', hex: '#64B5F6' },
-                { id: 'P054', name: '钴蓝', hex: '#42A5F5' },
-                { id: 'P055', name: '宝石蓝', hex: '#1E88E5' },
-                { id: 'P056', name: '翠绿', hex: '#00C853' },
-                { id: 'P057', name: '草绿', hex: '#7CB342' }
+                { id: 'P001', name: 'ç½è²', hex: '#FFFFFF' },
+                { id: 'P002', name: 'é»è²', hex: '#1A1A1A' },
+                { id: 'P003', name: 'ç°è²', hex: '#9E9E9E' },
+                { id: 'P004', name: 'çº¢è²', hex: '#E53935' },
+                { id: 'P005', name: 'æ·±çº¢', hex: '#C62828' },
+                { id: 'P006', name: 'æ©çº¢', hex: '#FF5722' },
+                { id: 'P007', name: 'æ©è²', hex: '#FF9800' },
+                { id: 'P008', name: 'é»è²', hex: '#FFEB3B' },
+                { id: 'P009', name: 'æ æª¬é»', hex: '#FFEE58' },
+                { id: 'P010', name: 'éè²', hex: '#FFC107' },
+                { id: 'P011', name: 'æµç»¿', hex: '#8BC34A' },
+                { id: 'P012', name: 'ç»¿è²', hex: '#4CAF50' },
+                { id: 'P013', name: 'æ·±ç»¿', hex: '#2E7D32' },
+                { id: 'P014', name: 'éç»¿', hex: '#009688' },
+                { id: 'P015', name: 'éè²', hex: '#00BCD4' },
+                { id: 'P016', name: 'å¤©è', hex: '#03A9F4' },
+                { id: 'P017', name: 'èè²', hex: '#2196F3' },
+                { id: 'P018', name: 'æ·±è', hex: '#1565C0' },
+                { id: 'P019', name: 'æµ·åè', hex: '#0D47A1' },
+                { id: 'P020', name: 'ç´«è²', hex: '#9C27B0' },
+                { id: 'P021', name: 'æ·±ç´«', hex: '#6A1B9A' },
+                { id: 'P022', name: 'åçº¢', hex: '#E91E63' },
+                { id: 'P023', name: 'ç²è²', hex: '#F48FB1' },
+                { id: 'P024', name: 'æµç²', hex: '#F8BBD9' },
+                { id: 'P025', name: 'ç«ç°', hex: '#FFCDD2' },
+                { id: 'P026', name: 'æ£è²', hex: '#795548' },
+                { id: 'P027', name: 'æ·±æ£', hex: '#5D4037' },
+                { id: 'P028', name: 'æµæ£', hex: '#A1887F' },
+                { id: 'P029', name: 'ç±³è²', hex: '#D7CCC8' },
+                { id: 'P030', name: 'å¥¶æ²¹', hex: '#FFF8E1' },
+                { id: 'P031', name: 'è±¡ç', hex: '#FFFFF0' },
+                { id: 'P032', name: 'èè²', hex: '#FFCCBC' },
+                { id: 'P033', name: 'è¤è²', hex: '#FFE0B2' },
+                { id: 'P034', name: 'æè²', hex: '#FFCC80' },
+                { id: 'P035', name: 'æ¡è²', hex: '#FFAB91' },
+                { id: 'P036', name: 'çç', hex: '#FF7043' },
+                { id: 'P037', name: 'éçº¢', hex: '#880E4F' },
+                { id: 'P038', name: 'æ è²', hex: '#AD1457' },
+                { id: 'P039', name: 'é±è²', hex: '#6D4C41' },
+                { id: 'P040', name: 'åå¡', hex: '#4E342E' },
+                { id: 'P041', name: 'å¯å¯', hex: '#3E2723' },
+                { id: 'P042', name: 'èé', hex: '#1A237E' },
+                { id: 'P043', name: 'éè', hex: '#283593' },
+                { id: 'P044', name: 'è°è¡£è', hex: '#CE93D8' },
+                { id: 'P045', name: 'æ·¡ç´«', hex: '#E1BEE7' },
+                { id: 'P046', name: 'èè·', hex: '#A5D6A7' },
+                { id: 'P047', name: 'æ¾ç³ç»¿', hex: '#80CBC4' },
+                { id: 'P048', name: 'æµ·è', hex: '#4DD0E1' },
+                { id: 'P049', name: 'æ¹è', hex: '#4FC3F7' },
+                { id: 'P050', name: 'å¤©ç©ºè', hex: '#81D4FA' },
+                { id: 'P051', name: 'æµè', hex: '#B3E5FC' },
+                { id: 'P052', name: 'ç¢è½¦è', hex: '#90CAF9' },
+                { id: 'P053', name: 'é¾è', hex: '#64B5F6' },
+                { id: 'P054', name: 'é´è', hex: '#42A5F5' },
+                { id: 'P055', name: 'å®ç³è', hex: '#1E88E5' },
+                { id: 'P056', name: 'ç¿ ç»¿', hex: '#00C853' },
+                { id: 'P057', name: 'èç»¿', hex: '#7CB342' }
             ],
             hama: [
-                { id: 'H001', name: '白色', hex: '#FFFFFF' },
-                { id: 'H002', name: '黑色', hex: '#000000' },
-                { id: 'H003', name: '红色', hex: '#FF0000' },
-                { id: 'H004', name: '深红', hex: '#CC0000' },
-                { id: 'H005', name: '酒红', hex: '#990000' },
-                { id: 'H006', name: '粉红', hex: '#FF69B4' },
-                { id: 'H007', name: '浅粉', hex: '#FFB6C1' },
-                { id: 'H008', name: '橙色', hex: '#FF6600' },
-                { id: 'H009', name: '深橙', hex: '#FF3300' },
-                { id: 'H010', name: '黄色', hex: '#FFFF00' },
-                { id: 'H011', name: '浅黄', hex: '#FFFF99' },
-                { id: 'H012', name: '金色', hex: '#FFD700' },
-                { id: 'H013', name: '绿色', hex: '#00CC00' },
-                { id: 'H014', name: '深绿', hex: '#009900' },
-                { id: 'H015', name: '浅绿', hex: '#99FF99' },
-                { id: 'H016', name: '青色', hex: '#00CCCC' },
-                { id: 'H017', name: '蓝色', hex: '#0066FF' },
-                { id: 'H018', name: '深蓝', hex: '#0000CC' },
-                { id: 'H019', name: '浅蓝', hex: '#99CCFF' },
-                { id: 'H020', name: '天蓝', hex: '#66CCFF' },
-                { id: 'H021', name: '紫色', hex: '#9933FF' },
-                { id: 'H022', name: '深紫', hex: '#6600CC' },
-                { id: 'H023', name: '浅紫', hex: '#CC99FF' },
-                { id: 'H024', name: '棕色', hex: '#993300' },
-                { id: 'H025', name: '深棕', hex: '#663300' },
-                { id: 'H026', name: '浅棕', hex: '#CC9966' },
-                { id: 'H027', name: '米色', hex: '#FFFFCC' },
-                { id: 'H028', name: '灰色', hex: '#999999' },
-                { id: 'H029', name: '深灰', hex: '#666666' },
-                { id: 'H030', name: '浅灰', hex: '#CCCCCC' },
-                { id: 'H031', name: '肤色', hex: '#FFCC99' },
-                { id: 'H032', name: '桃色', hex: '#FF9999' },
-                { id: 'H033', name: '玫瑰', hex: '#FF6699' },
-                { id: 'H034', name: '珊瑚', hex: '#FF6666' },
-                { id: 'H035', name: '薄荷', hex: '#66FFCC' },
-                { id: 'H036', name: '橄榄', hex: '#808000' },
-                { id: 'H037', name: '军绿', hex: '#556B2F' },
-                { id: 'H038', name: '松石', hex: '#40E0D0' },
-                { id: 'H039', name: '宝蓝', hex: '#4169E1' },
-                { id: 'H040', name: '品蓝', hex: '#000080' },
-                { id: 'H041', name: '玫瑰金', hex: '#E8B4B8' }
+                { id: 'H001', name: 'ç½è²', hex: '#FFFFFF' },
+                { id: 'H002', name: 'é»è²', hex: '#000000' },
+                { id: 'H003', name: 'çº¢è²', hex: '#FF0000' },
+                { id: 'H004', name: 'æ·±çº¢', hex: '#CC0000' },
+                { id: 'H005', name: 'éçº¢', hex: '#990000' },
+                { id: 'H006', name: 'ç²çº¢', hex: '#FF69B4' },
+                { id: 'H007', name: 'æµç²', hex: '#FFB6C1' },
+                { id: 'H008', name: 'æ©è²', hex: '#FF6600' },
+                { id: 'H009', name: 'æ·±æ©', hex: '#FF3300' },
+                { id: 'H010', name: 'é»è²', hex: '#FFFF00' },
+                { id: 'H011', name: 'æµé»', hex: '#FFFF99' },
+                { id: 'H012', name: 'éè²', hex: '#FFD700' },
+                { id: 'H013', name: 'ç»¿è²', hex: '#00CC00' },
+                { id: 'H014', name: 'æ·±ç»¿', hex: '#009900' },
+                { id: 'H015', name: 'æµç»¿', hex: '#99FF99' },
+                { id: 'H016', name: 'éè²', hex: '#00CCCC' },
+                { id: 'H017', name: 'èè²', hex: '#0066FF' },
+                { id: 'H018', name: 'æ·±è', hex: '#0000CC' },
+                { id: 'H019', name: 'æµè', hex: '#99CCFF' },
+                { id: 'H020', name: 'å¤©è', hex: '#66CCFF' },
+                { id: 'H021', name: 'ç´«è²', hex: '#9933FF' },
+                { id: 'H022', name: 'æ·±ç´«', hex: '#6600CC' },
+                { id: 'H023', name: 'æµç´«', hex: '#CC99FF' },
+                { id: 'H024', name: 'æ£è²', hex: '#993300' },
+                { id: 'H025', name: 'æ·±æ£', hex: '#663300' },
+                { id: 'H026', name: 'æµæ£', hex: '#CC9966' },
+                { id: 'H027', name: 'ç±³è²', hex: '#FFFFCC' },
+                { id: 'H028', name: 'ç°è²', hex: '#999999' },
+                { id: 'H029', name: 'æ·±ç°', hex: '#666666' },
+                { id: 'H030', name: 'æµç°', hex: '#CCCCCC' },
+                { id: 'H031', name: 'è¤è²', hex: '#FFCC99' },
+                { id: 'H032', name: 'æ¡è²', hex: '#FF9999' },
+                { id: 'H033', name: 'ç«ç°', hex: '#FF6699' },
+                { id: 'H034', name: 'çç', hex: '#FF6666' },
+                { id: 'H035', name: 'èè·', hex: '#66FFCC' },
+                { id: 'H036', name: 'æ©æ¦', hex: '#808000' },
+                { id: 'H037', name: 'åç»¿', hex: '#556B2F' },
+                { id: 'H038', name: 'æ¾ç³', hex: '#40E0D0' },
+                { id: 'H039', name: 'å®è', hex: '#4169E1' },
+                { id: 'H040', name: 'åè', hex: '#000080' },
+                { id: 'H041', name: 'ç«ç°é', hex: '#E8B4B8' }
             ],
             artkal: [
-                { id: 'A001', name: '白色', hex: '#FFFFFF' },
-                { id: 'A002', name: '象牙白', hex: '#FFFFF0' },
-                { id: 'A003', name: '米色', hex: '#F5F5DC' },
-                { id: 'A004', name: '浅灰', hex: '#D3D3D3' },
-                { id: 'A005', name: '灰色', hex: '#808080' },
-                { id: 'A006', name: '深灰', hex: '#696969' },
-                { id: 'A007', name: '炭灰', hex: '#36454F' },
-                { id: 'A008', name: '黑色', hex: '#000000' },
-                { id: 'A009', name: '奶油黄', hex: '#FFFDD0' },
-                { id: 'A010', name: '淡黄', hex: '#FFFACD' },
-                { id: 'A011', name: '柠檬黄', hex: '#FFF44F' },
-                { id: 'A012', name: '黄色', hex: '#FFD700' },
-                { id: 'A013', name: '金黄', hex: '#DAA520' },
-                { id: 'A014', name: '琥珀', hex: '#FFBF00' },
-                { id: 'A015', name: '橙黄', hex: '#FFAE42' },
-                { id: 'A016', name: '南瓜', hex: '#FF7518' },
-                { id: 'A017', name: '橙色', hex: '#FF6600' },
-                { id: 'A018', name: '深橙', hex: '#FF4500' },
-                { id: 'A019', name: '珊瑚', hex: '#FF7F50' },
-                { id: 'A020', name: '番茄红', hex: '#FF6347' },
-                { id: 'A021', name: '红色', hex: '#FF0000' },
-                { id: 'A022', name: '深红', hex: '#DC143C' },
-                { id: 'A023', name: '酒红', hex: '#722F37' },
-                { id: 'A024', name: '栗色', hex: '#800000' },
-                { id: 'A025', name: '暗红', hex: '#8B0000' },
-                { id: 'A026', name: '胭脂红', hex: '#960018' },
-                { id: 'A027', name: '朱红', hex: '#C41E3A' },
-                { id: 'A028', name: '洋红', hex: '#FF00FF' },
-                { id: 'A029', name: '品红', hex: '#FF0080' },
-                { id: 'A030', name: '深粉', hex: '#FF1493' },
-                { id: 'A031', name: '玫瑰红', hex: '#FF007F' },
-                { id: 'A032', name: '粉红', hex: '#FF69B4' },
-                { id: 'A033', name: '浅粉', hex: '#FFB6C1' },
-                { id: 'A034', name: '淡粉', hex: '#FFC0CB' },
-                { id: 'A035', name: '贝壳粉', hex: '#FFF0F5' },
-                { id: 'A036', name: '桃色', hex: '#FFDAB9' },
-                { id: 'A037', name: '杏色', hex: '#FFE4B5' },
-                { id: 'A038', name: '蜜桃', hex: '#FFCBA4' },
-                { id: 'A039', name: '肉色', hex: '#FFE4C4' },
-                { id: 'A040', name: '肤色', hex: '#FFCD94' },
-                { id: 'A041', name: '浅橙', hex: '#FFA07A' },
-                { id: 'A042', name: '珊瑚色', hex: '#F88379' },
-                { id: 'A043', name: '印度红', hex: '#CD5C5C' },
-                { id: 'A044', name: '印度棕', hex: '#C68642' },
-                { id: 'A045', name: '浅棕', hex: '#D2B48C' },
-                { id: 'A046', name: '棕色', hex: '#A0522D' },
-                { id: 'A047', name: '深棕', hex: '#8B4513' },
-                { id: 'A048', name: '巧克力', hex: '#7B3F00' },
-                { id: 'A049', name: '咖啡', hex: '#6F4E37' },
-                { id: 'A050', name: '摩卡', hex: '#967969' },
-                { id: 'A051', name: '可可', hex: '#C4A484' },
-                { id: 'A052', name: '卡其', hex: '#F0E68C' },
-                { id: 'A053', name: '橄榄', hex: '#808000' },
-                { id: 'A054', name: '橄榄绿', hex: '#556B2F' },
-                { id: 'A055', name: '苔绿', hex: '#6B8E23' },
-                { id: 'A056', name: '黄绿', hex: '#9ACD32' },
-                { id: 'A057', name: '草绿', hex: '#7CFC00' },
-                { id: 'A058', name: '浅绿', hex: '#90EE90' },
-                { id: 'A059', name: '薄荷', hex: '#98FF98' },
-                { id: 'A060', name: '翠绿', hex: '#00FF7F' },
-                { id: 'A061', name: '绿色', hex: '#008000' },
-                { id: 'A062', name: '深绿', hex: '#006400' },
-                { id: 'A063', name: '森林绿', hex: '#228B22' },
-                { id: 'A064', name: '海绿', hex: '#2E8B57' },
-                { id: 'A065', name: '祖母绿', hex: '#50C878' },
-                { id: 'A066', name: '青绿', hex: '#00FA9A' },
-                { id: 'A067', name: '薄荷绿', hex: '#3EB489' },
-                { id: 'A068', name: '青草绿', hex: '#7CFC00' },
-                { id: 'A069', name: '明绿', hex: '#00FF00' },
-                { id: 'A070', name: '荧光绿', hex: '#ADFF2F' },
-                { id: 'A071', name: '嫩绿', hex: '#B8E994' },
-                { id: 'A072', name: '松石绿', hex: '#40E0D0' },
-                { id: 'A073', name: '绿松石', hex: '#30D5C8' },
-                { id: 'A074', name: '青色', hex: '#00FFFF' },
-                { id: 'A075', name: '浅青', hex: '#E0FFFF' },
-                { id: 'A076', name: '绿松石蓝', hex: '#00CED1' },
-                { id: 'A077', name: '深青', hex: '#008B8B' },
-                { id: 'A078', name: '蓝绿', hex: '#20B2AA' },
-                { id: 'A079', name: '中绿', hex: '#66CDAA' },
-                { id: 'A080', name: '天蓝', hex: '#87CEEB' },
-                { id: 'A081', name: '浅蓝', hex: '#ADD8E6' },
-                { id: 'A082', name: '淡蓝', hex: '#B0E0E6' },
-                { id: 'A083', name: '浅钢蓝', hex: '#B0C4DE' },
-                { id: 'A084', name: '矢车菊蓝', hex: '#6495ED' },
-                { id: 'A085', name: '浅蓝', hex: '#87CEFA' },
-                { id: 'A086', name: '天蓝色', hex: '#87CEEB' },
-                { id: 'A087', name: '粉蓝', hex: '#93B8D6' },
-                { id: 'A088', name: '蓝灰', hex: '#778899' },
-                { id: 'A089', name: '浅灰蓝', hex: '#A0B8C8' },
-                { id: 'A090', name: '蓝色', hex: '#0000FF' },
-                { id: 'A091', name: '钴蓝', hex: '#0047AB' },
-                { id: 'A092', name: '品蓝', hex: '#4169E1' },
-                { id: 'A093', name: '皇家蓝', hex: '#4169E1' },
-                { id: 'A094', name: '深蓝', hex: '#0000CD' },
-                { id: 'A095', name: '海军蓝', hex: '#000080' },
-                { id: 'A096', name: '午夜蓝', hex: '#191970' },
-                { id: 'A097', name: '靛蓝', hex: '#4B0082' },
-                { id: 'A098', name: '藏青', hex: '#1E3A5F' },
-                { id: 'A099', name: '普鲁士蓝', hex: '#003153' },
-                { id: 'A100', name: '浅紫', hex: '#E6E6FA' },
-                { id: 'A101', name: '淡紫', hex: '#D8BFD8' },
-                { id: 'A102', name: '薰衣草', hex: '#E6E6FA' },
-                { id: 'A103', name: '紫丁香', hex: '#C8A2C8' },
-                { id: 'A104', name: '浅紫罗兰', hex: '#CDBA96' },
-                { id: 'A105', name: '紫色', hex: '#800080' },
-                { id: 'A106', name: '深紫', hex: '#4B0082' },
-                { id: 'A107', name: '三色堇', hex: '#EE82EE' },
-                { id: 'A108', name:: '亮紫', hex: '#BF00FF' },
-                { id: 'A109', name: '兰紫色', hex: '#9932CC' },
-                { id: 'A110', name: '中紫', hex: '#9370DB' },
-                { id: 'A111', name: '浅紫', hex: '#DA70D6' },
-                { id: 'A112', name: '兰花紫', hex: '#DA70D6' },
-                { id: 'A113', name: '紫红色', hex: '#C71585' },
-                { id: 'A114', name: '品红红', hex: '#FF00FF' },
-                { id: 'A115', name: '深粉红', hex: '#FF1493' },
-                { id: 'A116', name: '亮粉', hex: '#FF69B4' },
-                { id: 'A117', name: '热粉', hex: '#FF69B4' },
-                { id: 'A118', name: '粉红', hex: '#FFB6C1' },
-                { id: 'A119', name: '浅粉红', hex: '#FFB6C1' },
-                { id: 'A120', name: '樱粉', hex: '#FFC0CB' },
-                { id: 'A121', name: '暖白', hex: '#FAEBD7' },
-                { id: 'A122', name: '古董白', hex: '#FAEBD7' },
-                { id: 'A123', name: '花白', hex: '#FFFAF0' },
-                { id: 'A124', name: '烟白', hex: '#F5F5F5' },
-                { id: 'A125', name: '雪白', hex: '#FFFAFA' },
-                { id: 'A126', name: '白烟', hex: '#F5F5F5' },
-                { id: 'A127', name: '浅灰', hex: '#D3D3D3' },
-                { id: 'A128', name: '银色', hex: '#C0C0C0' },
-                { id: 'A129', name: '暗灰', hex: '#A9A9A9' },
-                { id: 'A130', name: '灰色', hex: '#808080' },
-                { id: 'A131', name: '深灰', hex: '#696969' },
-                { id: 'A132', name: '炭灰', hex: '#36454F' },
-                { id: 'A133', name: '铁灰', hex: '#778899' },
-                { id: 'A134', name: '岩灰', hex: '#6E6E6E' },
-                { id: 'A135', name: '石墨', hex: '#4D4D4D' },
-                { id: 'A136', name: '黑灰', hex: '#2B2B2B' },
-                { id: 'A137', name: '石油', hex: '#2B2B2B' },
-                { id: 'A138', name: '煤', hex: '#1C1C1C' },
-                { id: 'A139', name: '乌黑', hex: '#0D0D0D' },
-                { id: 'A140', name: '夜色', hex: '#0A0A14' },
-                { id: 'A141', name: '深紫蓝', hex: '#301934' },
-                { id: 'A142', name: '李子', hex: '#580F41' },
-                { id: 'A143', name: '梅红', hex: '#840842' },
-                { id: 'A144', name: '覆盆子', hex: '#E30B5C' },
-                { id: 'A145', name: '草莓', hex: '#FC4C4E' },
-                { id: 'A146', name: '西瓜', hex: '#F25C63' },
-                { id: 'A147', name: '焦糖', hex: '#FFD59A' },
-                { id: 'A148', name: '太妃糖', hex: '#AF7846' },
-                { id: 'A149', name: '榛子', hex: '#8B7355' },
-                { id: 'A150', name: '开心果', hex: '#93C572' },
-                { id: 'A151', name: '酸橙', hex: '#32CD32' },
-                { id: 'A152', name: '青柠', hex: '#00FF00' },
-                { id: 'A153', name: '奇异果', hex: '#8EE53F' },
-                { id: 'A154', name: '蓝绿', hex: '#2DD4BF' },
-                { id: 'A155', name: '加勒比海', hex: '#00CC99' },
-                { id: 'A156', name: '太平洋', hex: '#009DC4' },
-                { id: 'A157', name: '知更鸟', hex: '#30B5E5' },
-                { id: 'A158', name: '电光蓝', hex: '#00BFFF' },
-                { id: 'A159', name: '霓虹蓝', hex: '#0080FF' }
+                { id: 'A001', name: 'ç½è²', hex: '#FFFFFF' },
+                { id: 'A002', name: 'è±¡çç½', hex: '#FFFFF0' },
+                { id: 'A003', name: 'ç±³è²', hex: '#F5F5DC' },
+                { id: 'A004', name: 'æµç°', hex: '#D3D3D3' },
+                { id: 'A005', name: 'ç°è²', hex: '#808080' },
+                { id: 'A006', name: 'æ·±ç°', hex: '#696969' },
+                { id: 'A007', name: 'ç­ç°', hex: '#36454F' },
+                { id: 'A008', name: 'é»è²', hex: '#000000' },
+                { id: 'A009', name: 'å¥¶æ²¹é»', hex: '#FFFDD0' },
+                { id: 'A010', name: 'æ·¡é»', hex: '#FFFACD' },
+                { id: 'A011', name: 'æ æª¬é»', hex: '#FFF44F' },
+                { id: 'A012', name: 'é»è²', hex: '#FFD700' },
+                { id: 'A013', name: 'éé»', hex: '#DAA520' },
+                { id: 'A014', name: 'ç¥ç', hex: '#FFBF00' },
+                { id: 'A015', name: 'æ©é»', hex: '#FFAE42' },
+                { id: 'A016', name: 'åç', hex: '#FF7518' },
+                { id: 'A017', name: 'æ©è²', hex: '#FF6600' },
+                { id: 'A018', name: 'æ·±æ©', hex: '#FF4500' },
+                { id: 'A019', name: 'çç', hex: '#FF7F50' },
+                { id: 'A020', name: 'çªèçº¢', hex: '#FF6347' },
+                { id: 'A021', name: 'çº¢è²', hex: '#FF0000' },
+                { id: 'A022', name: 'æ·±çº¢', hex: '#DC143C' },
+                { id: 'A023', name: 'éçº¢', hex: '#722F37' },
+                { id: 'A024', name: 'æ è²', hex: '#800000' },
+                { id: 'A025', name: 'æçº¢', hex: '#8B0000' },
+                { id: 'A026', name: 'è­èçº¢', hex: '#960018' },
+                { id: 'A027', name: 'æ±çº¢', hex: '#C41E3A' },
+                { id: 'A028', name: 'æ´çº¢', hex: '#FF00FF' },
+                { id: 'A029', name: 'åçº¢', hex: '#FF0080' },
+                { id: 'A030', name: 'æ·±ç²', hex: '#FF1493' },
+                { id: 'A031', name: 'ç«ç°çº¢', hex: '#FF007F' },
+                { id: 'A032', name: 'ç²çº¢', hex: '#FF69B4' },
+                { id: 'A033', name: 'æµç²', hex: '#FFB6C1' },
+                { id: 'A034', name: 'æ·¡ç²', hex: '#FFC0CB' },
+                { id: 'A035', name: 'è´å£³ç²', hex: '#FFF0F5' },
+                { id: 'A036', name: 'æ¡è²', hex: '#FFDAB9' },
+                { id: 'A037', name: 'æè²', hex: '#FFE4B5' },
+                { id: 'A038', name: 'èæ¡', hex: '#FFCBA4' },
+                { id: 'A039', name: 'èè²', hex: '#FFE4C4' },
+                { id: 'A040', name: 'è¤è²', hex: '#FFCD94' },
+                { id: 'A041', name: 'æµæ©', hex: '#FFA07A' },
+                { id: 'A042', name: 'ççè²', hex: '#F88379' },
+                { id: 'A043', name: 'å°åº¦çº¢', hex: '#CD5C5C' },
+                { id: 'A044', name: 'å°åº¦æ£', hex: '#C68642' },
+                { id: 'A045', name: 'æµæ£', hex: '#D2B48C' },
+                { id: 'A046', name: 'æ£è²', hex: '#A0522D' },
+                { id: 'A047', name: 'æ·±æ£', hex: '#8B4513' },
+                { id: 'A048', name: 'å·§åå', hex: '#7B3F00' },
+                { id: 'A049', name: 'åå¡', hex: '#6F4E37' },
+                { id: 'A050', name: 'æ©å¡', hex: '#967969' },
+                { id: 'A051', name: 'å¯å¯', hex: '#C4A484' },
+                { id: 'A052', name: 'å¡å¶', hex: '#F0E68C' },
+                { id: 'A053', name: 'æ©æ¦', hex: '#808000' },
+                { id: 'A054', name: 'æ©æ¦ç»¿', hex: '#556B2F' },
+                { id: 'A055', name: 'èç»¿', hex: '#6B8E23' },
+                { id: 'A056', name: 'é»ç»¿', hex: '#9ACD32' },
+                { id: 'A057', name: 'èç»¿', hex: '#7CFC00' },
+                { id: 'A058', name: 'æµç»¿', hex: '#90EE90' },
+                { id: 'A059', name: 'èè·', hex: '#98FF98' },
+                { id: 'A060', name: 'ç¿ ç»¿', hex: '#00FF7F' },
+                { id: 'A061', name: 'ç»¿è²', hex: '#008000' },
+                { id: 'A062', name: 'æ·±ç»¿', hex: '#006400' },
+                { id: 'A063', name: 'æ£®æç»¿', hex: '#228B22' },
+                { id: 'A064', name: 'æµ·ç»¿', hex: '#2E8B57' },
+                { id: 'A065', name: 'ç¥æ¯ç»¿', hex: '#50C878' },
+                { id: 'A066', name: 'éç»¿', hex: '#00FA9A' },
+                { id: 'A067', name: 'èè·ç»¿', hex: '#3EB489' },
+                { id: 'A068', name: 'éèç»¿', hex: '#7CFC00' },
+                { id: 'A069', name: 'æç»¿', hex: '#00FF00' },
+                { id: 'A070', name: 'è§åç»¿', hex: '#ADFF2F' },
+                { id: 'A071', name: 'å«©ç»¿', hex: '#B8E994' },
+                { id: 'A072', name: 'æ¾ç³ç»¿', hex: '#40E0D0' },
+                { id: 'A073', name: 'ç»¿æ¾ç³', hex: '#30D5C8' },
+                { id: 'A074', name: 'éè²', hex: '#00FFFF' },
+                { id: 'A075', name: 'æµé', hex: '#E0FFFF' },
+                { id: 'A076', name: 'ç»¿æ¾ç³è', hex: '#00CED1' },
+                { id: 'A077', name: 'æ·±é', hex: '#008B8B' },
+                { id: 'A078', name: 'èç»¿', hex: '#20B2AA' },
+                { id: 'A079', name: 'ä¸­ç»¿', hex: '#66CDAA' },
+                { id: 'A080', name: 'å¤©è', hex: '#87CEEB' },
+                { id: 'A081', name: 'æµè', hex: '#ADD8E6' },
+                { id: 'A082', name: 'æ·¡è', hex: '#B0E0E6' },
+                { id: 'A083', name: 'æµé¢è', hex: '#B0C4DE' },
+                { id: 'A084', name: 'ç¢è½¦èè', hex: '#6495ED' },
+                { id: 'A085', name: 'æµè', hex: '#87CEFA' },
+                { id: 'A086', name: 'å¤©èè²', hex: '#87CEEB' },
+                { id: 'A087', name: 'ç²è', hex: '#93B8D6' },
+                { id: 'A088', name: 'èç°', hex: '#778899' },
+                { id: 'A089', name: 'æµç°è', hex: '#A0B8C8' },
+                { id: 'A090', name: 'èè²', hex: '#0000FF' },
+                { id: 'A091', name: 'é´è', hex: '#0047AB' },
+                { id: 'A092', name: 'åè', hex: '#4169E1' },
+                { id: 'A093', name: 'çå®¶è', hex: '#4169E1' },
+                { id: 'A094', name: 'æ·±è', hex: '#0000CD' },
+                { id: 'A095', name: 'æµ·åè', hex: '#000080' },
+                { id: 'A096', name: 'åå¤è', hex: '#191970' },
+                { id: 'A097', name: 'éè', hex: '#4B0082' },
+                { id: 'A098', name: 'èé', hex: '#1E3A5F' },
+                { id: 'A099', name: 'æ®é²å£«è', hex: '#003153' },
+                { id: 'A100', name: 'æµç´«', hex: '#E6E6FA' },
+                { id: 'A101', name: 'æ·¡ç´«', hex: '#D8BFD8' },
+                { id: 'A102', name: 'è°è¡£è', hex: '#E6E6FA' },
+                { id: 'A103', name: 'ç´«ä¸é¦', hex: '#C8A2C8' },
+                { id: 'A104', name: 'æµç´«ç½å°', hex: '#CDBA96' },
+                { id: 'A105', name: 'ç´«è²', hex: '#800080' },
+                { id: 'A106', name: 'æ·±ç´«', hex: '#4B0082' },
+                { id: 'A107', name: 'ä¸è²å ', hex: '#EE82EE' },
+                { id: 'A108', name:: 'äº®ç´«', hex: '#BF00FF' },
+                { id: 'A109', name: 'å°ç´«è²', hex: '#9932CC' },
+                { id: 'A110', name: 'ä¸­ç´«', hex: '#9370DB' },
+                { id: 'A111', name: 'æµç´«', hex: '#DA70D6' },
+                { id: 'A112', name: 'å°è±ç´«', hex: '#DA70D6' },
+                { id: 'A113', name: 'ç´«çº¢è²', hex: '#C71585' },
+                { id: 'A114', name: 'åçº¢çº¢', hex: '#FF00FF' },
+                { id: 'A115', name: 'æ·±ç²çº¢', hex: '#FF1493' },
+                { id: 'A116', name: 'äº®ç²', hex: '#FF69B4' },
+                { id: 'A117', name: 'ç­ç²', hex: '#FF69B4' },
+                { id: 'A118', name: 'ç²çº¢', hex: '#FFB6C1' },
+                { id: 'A119', name: 'æµç²çº¢', hex: '#FFB6C1' },
+                { id: 'A120', name: 'æ¨±ç²', hex: '#FFC0CB' },
+                { id: 'A121', name: 'æç½', hex: '#FAEBD7' },
+                { id: 'A122', name: 'å¤è£ç½', hex: '#FAEBD7' },
+                { id: 'A123', name: 'è±ç½', hex: '#FFFAF0' },
+                { id: 'A124', name: 'çç½', hex: '#F5F5F5' },
+                { id: 'A125', name: 'éªç½', hex: '#FFFAFA' },
+                { id: 'A126', name: 'ç½ç', hex: '#F5F5F5' },
+                { id: 'A127', name: 'æµç°', hex: '#D3D3D3' },
+                { id: 'A128', name: 'é¶è²', hex: '#C0C0C0' },
+                { id: 'A129', name: 'æç°', hex: '#A9A9A9' },
+                { id: 'A130', name: 'ç°è²', hex: '#808080' },
+                { id: 'A131', name: 'æ·±ç°', hex: '#696969' },
+                { id: 'A132', name: 'ç­ç°', hex: '#36454F' },
+                { id: 'A133', name: 'éç°', hex: '#778899' },
+                { id: 'A134', name: 'å²©ç°', hex: '#6E6E6E' },
+                { id: 'A135', name: 'ç³å¢¨', hex: '#4D4D4D' },
+                { id: 'A136', name: 'é»ç°', hex: '#2B2B2B' },
+                { id: 'A137', name: 'ç³æ²¹', hex: '#2B2B2B' },
+                { id: 'A138', name: 'ç¤', hex: '#1C1C1C' },
+                { id: 'A139', name: 'ä¹é»', hex: '#0D0D0D' },
+                { id: 'A140', name: 'å¤è²', hex: '#0A0A14' },
+                { id: 'A141', name: 'æ·±ç´«è', hex: '#301934' },
+                { id: 'A142', name: 'æå­', hex: '#580F41' },
+                { id: 'A143', name: 'æ¢çº¢', hex: '#840842' },
+                { id: 'A144', name: 'è¦çå­', hex: '#E30B5C' },
+                { id: 'A145', name: 'èè', hex: '#FC4C4E' },
+                { id: 'A146', name: 'è¥¿ç', hex: '#F25C63' },
+                { id: 'A147', name: 'ç¦ç³', hex: '#FFD59A' },
+                { id: 'A148', name: 'å¤ªå¦ç³', hex: '#AF7846' },
+                { id: 'A149', name: 'æ¦å­', hex: '#8B7355' },
+                { id: 'A150', name: 'å¼å¿æ', hex: '#93C572' },
+                { id: 'A151', name: 'é¸æ©', hex: '#32CD32' },
+                { id: 'A152', name: 'éæ ', hex: '#00FF00' },
+                { id: 'A153', name: 'å¥å¼æ', hex: '#8EE53F' },
+                { id: 'A154', name: 'èç»¿', hex: '#2DD4BF' },
+                { id: 'A155', name: 'å åæ¯æµ·', hex: '#00CC99' },
+                { id: 'A156', name: 'å¤ªå¹³æ´', hex: '#009DC4' },
+                { id: 'A157', name: 'ç¥æ´é¸', hex: '#30B5E5' },
+                { id: 'A158', name: 'çµåè', hex: '#00BFFF' },
+                { id: 'A159', name: 'éè¹è', hex: '#0080FF' }
             ]
         };
         
-        // ========== Delta E 2000 颜色距离算法 ==========
+        // ========== Delta E 2000 é¢è²è·ç¦»ç®æ³ ==========
         function hexToLab(hex) {
             // Convert hex to RGB
             let r = parseInt(hex.slice(1, 3), 16) / 255;
@@ -910,7 +910,7 @@
             );
         }
         
-        // ========== 颜色匹配 ==========
+        // ========== é¢è²å¹é ==========
         function findClosestColor(hex, colorArray) {
             const lab1 = hexToLab(hex);
             let minDelta = Infinity;
@@ -928,14 +928,14 @@
             return closestColor;
         }
         
-        // ========== 全局状态 ==========
+        // ========== å¨å±ç¶æ ==========
         let currentImage = null;
         let patternData = null;
         let selectedBrand = 'perler';
         let selectedGridSize = 29;
         let selectedBgColor = '#FFFFFF';
         
-        // ========== DOM 元素 ==========
+        // ========== DOM åç´  ==========
         const uploadArea = document.getElementById('uploadArea');
         const fileInput = document.getElementById('fileInput');
         const previewContainer = document.getElementById('previewContainer');
@@ -945,7 +945,7 @@
         const patternCanvas = document.getElementById('patternCanvas');
         const processingOverlay = document.getElementById('processingOverlay');
         
-        // ========== 事件监听 ==========
+        // ========== äºä»¶çå¬ ==========
         uploadArea.addEventListener('click', () => fileInput.click());
         
         uploadArea.addEventListener('dragover', (e) => {
@@ -973,22 +973,22 @@
             }
         });
         
-        // 品牌选择
+        // åçéæ©
         document.querySelectorAll('input[name="brand"]').forEach(input => {
             input.addEventListener('change', (e) => {
                 selectedBrand = e.target.value;
             });
         });
         
-        // 网格尺寸选择
+        // ç½æ ¼å°ºå¯¸éæ©
         document.querySelectorAll('input[name="gridSize"]').forEach(input => {
             input.addEventListener('change', (e) => {
                 selectedGridSize = parseInt(e.target.value);
-                document.getElementById('gridSizeValue').textContent = `${selectedGridSize} × ${selectedGridSize}`;
+                document.getElementById('gridSizeValue').textContent = `${selectedGridSize} Ã ${selectedGridSize}`;
             });
         });
         
-        // 背景颜色选择
+        // èæ¯é¢è²éæ©
         document.querySelectorAll('input[name="bgColor"]').forEach(input => {
             input.addEventListener('change', (e) => {
                 selectedBgColor = e.target.value;
@@ -1000,10 +1000,10 @@
         document.getElementById('downloadPngBtn').addEventListener('click', downloadPng);
         document.getElementById('downloadListBtn').addEventListener('click', downloadMaterialsList);
         
-        // ========== 处理文件 ==========
+        // ========== å¤çæä»¶ ==========
         function handleFile(file) {
             if (file.size > 50 * 1024 * 1024) {
-                alert('文件太大，请选择小于 50MB 的图片');
+                alert('æä»¶å¤ªå¤§ï¼è¯·éæ©å°äº 50MB çå¾ç');
                 return;
             }
             
@@ -1021,13 +1021,13 @@
             reader.readAsDataURL(file);
         }
         
-        // ========== 生成图纸 ==========
+        // ========== çæå¾çº¸ ==========
         async function generatePattern() {
             if (!currentImage) return;
             
             processingOverlay.classList.add('show');
             
-            // 使用 requestAnimationFrame 让 UI 有时间更新
+            // ä½¿ç¨ requestAnimationFrame è®© UI ææ¶é´æ´æ°
             await new Promise(resolve => requestAnimationFrame(resolve));
             
             try {
@@ -1035,11 +1035,11 @@
                 const colors = BEAD_COLORS[selectedBrand];
                 const bgColor = selectedBgColor;
                 
-                // 创建临时 canvas 来处理图像
+                // åå»ºä¸´æ¶ canvas æ¥å¤çå¾å
                 const tempCanvas = document.createElement('canvas');
                 const tempCtx = tempCanvas.getContext('2d');
                 
-                // 计算网格尺寸
+                // è®¡ç®ç½æ ¼å°ºå¯¸
                 const aspectRatio = currentImage.height / currentImage.width;
                 const gridWidth = gridSize;
                 const gridHeight = Math.round(gridSize * aspectRatio);
@@ -1047,14 +1047,14 @@
                 tempCanvas.width = gridWidth;
                 tempCanvas.height = gridHeight;
                 
-                // 绘制并缩放图像
+                // ç»å¶å¹¶ç¼©æ¾å¾å
                 tempCtx.drawImage(currentImage, 0, 0, gridWidth, gridHeight);
                 
-                // 获取图像数据
+                // è·åå¾åæ°æ®
                 const imageData = tempCtx.getImageData(0, 0, gridWidth, gridHeight);
                 const pixels = imageData.data;
                 
-                // 创建图案数据
+                // åå»ºå¾æ¡æ°æ®
                 patternData = {
                     width: gridWidth,
                     height: gridHeight,
@@ -1064,7 +1064,7 @@
                     brand: selectedBrand
                 };
                 
-                // 处理每个像素
+                // å¤çæ¯ä¸ªåç´ 
                 for (let y = 0; y < gridHeight; y++) {
                     patternData.grid[y] = [];
                     for (let x = 0; x < gridWidth; x++) {
@@ -1078,7 +1078,7 @@
                         
                         patternData.grid[y][x] = closestColor;
                         
-                        // 统计颜色
+                        // ç»è®¡é¢è²
                         if (!patternData.colors[closestColor.id]) {
                             patternData.colors[closestColor.id] = {
                                 ...closestColor,
@@ -1089,38 +1089,38 @@
                     }
                 }
                 
-                // 绘制预览
+                // ç»å¶é¢è§
                 await drawPattern();
                 
-                // 更新统计
+                // æ´æ°ç»è®¡
                 updateStats();
                 
-                // 显示结果
+                // æ¾ç¤ºç»æ
                 resultCard.classList.add('show');
                 
             } catch (error) {
-                console.error('生成图纸失败:', error);
-                alert('生成图纸时发生错误，请重试');
+                console.error('çæå¾çº¸å¤±è´¥:', error);
+                alert('çæå¾çº¸æ¶åçéè¯¯ï¼è¯·éè¯');
             } finally {
                 processingOverlay.classList.remove('show');
             }
         }
         
-        // ========== 绘制图纸 ==========
+        // ========== ç»å¶å¾çº¸ ==========
         async function drawPattern() {
-            const cellSize = 12; // 每个格子的像素大小
+            const cellSize = 12; // æ¯ä¸ªæ ¼å­çåç´ å¤§å°
             const canvas = patternCanvas;
             const ctx = canvas.getContext('2d');
             
             canvas.width = patternData.width * cellSize;
             canvas.height = patternData.height * cellSize;
             
-            // 绘制每个格子
+            // ç»å¶æ¯ä¸ªæ ¼å­
             for (let y = 0; y < patternData.height; y++) {
                 for (let x = 0; x < patternData.width; x++) {
                     const color = patternData.grid[y][x];
                     
-                    // 绘制圆形拼豆
+                    // ç»å¶åå½¢æ¼è±
                     ctx.fillStyle = color.hex;
                     ctx.beginPath();
                     const cx = x * cellSize + cellSize / 2;
@@ -1129,14 +1129,14 @@
                     ctx.arc(cx, cy, r, 0, Math.PI * 2);
                     ctx.fill();
                     
-                    // 添加边框
+                    // æ·»å è¾¹æ¡
                     ctx.strokeStyle = 'rgba(0,0,0,0.2)';
                     ctx.lineWidth = 0.5;
                     ctx.stroke();
                 }
             }
             
-            // 绘制网格线
+            // ç»å¶ç½æ ¼çº¿
             ctx.strokeStyle = 'rgba(0,0,0,0.1)';
             ctx.lineWidth = 0.5;
             
@@ -1155,7 +1155,7 @@
             }
         }
         
-        // ========== 更新统计 ==========
+        // ========== æ´æ°ç»è®¡ ==========
         function updateStats() {
             const brandNames = {
                 perler: 'Perler',
@@ -1164,12 +1164,12 @@
             };
             
             document.getElementById('statBrand').textContent = brandNames[selectedBrand];
-            document.getElementById('statGrid').textContent = `${patternData.width}×${patternData.height}`;
+            document.getElementById('statGrid').textContent = `${patternData.width}Ã${patternData.height}`;
             
             const total = Object.values(patternData.colors).reduce((sum, c) => sum + c.count, 0);
             document.getElementById('statTotal').textContent = total.toLocaleString();
             
-            // 更新材料列表
+            // æ´æ°ææåè¡¨
             const materialsList = document.getElementById('materialsList');
             const sortedColors = Object.values(patternData.colors).sort((a, b) => b.count - a.count);
             
@@ -1177,9 +1177,9 @@
                 <table class="materials-table">
                     <thead>
                         <tr>
-                            <th>颜色</th>
-                            <th>色号</th>
-                            <th>数量</th>
+                            <th>é¢è²</th>
+                            <th>è²å·</th>
+                            <th>æ°é</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1204,22 +1204,22 @@
             materialsList.innerHTML = html;
         }
         
-        // ========== 下载 PNG ==========
+        // ========== ä¸è½½ PNG ==========
         function downloadPng() {
             if (!patternData) return;
             
-            const cellSize = 20; // 高清版本的格子大小
+            const cellSize = 20; // é«æ¸çæ¬çæ ¼å­å¤§å°
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
             
             canvas.width = patternData.width * cellSize;
             canvas.height = patternData.height * cellSize;
             
-            // 绘制背景
+            // ç»å¶èæ¯
             ctx.fillStyle = patternData.bgColor;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // 绘制每个格子
+            // ç»å¶æ¯ä¸ªæ ¼å­
             for (let y = 0; y < patternData.height; y++) {
                 for (let x = 0; x < patternData.width; x++) {
                     const color = patternData.grid[y][x];
@@ -1232,12 +1232,12 @@
                     ctx.arc(cx, cy, r, 0, Math.PI * 2);
                     ctx.fill();
                     
-                    // 添加边框
+                    // æ·»å è¾¹æ¡
                     ctx.strokeStyle = 'rgba(0,0,0,0.3)';
                     ctx.lineWidth = 1;
                     ctx.stroke();
                     
-                    // 绘制色号
+                    // ç»å¶è²å·
                     ctx.fillStyle = isLightColor(color.hex) ? '#000' : '#FFF';
                     ctx.font = `bold ${Math.max(8, cellSize / 4)}px Arial`;
                     ctx.textAlign = 'center';
@@ -1246,7 +1246,7 @@
                 }
             }
             
-            // 绘制网格线
+            // ç»å¶ç½æ ¼çº¿
             ctx.strokeStyle = 'rgba(0,0,0,0.5)';
             ctx.lineWidth = 1;
             
@@ -1264,14 +1264,14 @@
                 ctx.stroke();
             }
             
-            // 下载
+            // ä¸è½½
             const link = document.createElement('a');
-            link.download = `拼豆图纸_${patternData.width}x${patternData.height}_${patternData.brand}.png`;
+            link.download = `æ¼è±å¾çº¸_${patternData.width}x${patternData.height}_${patternData.brand}.png`;
             link.href = canvas.toDataURL('image/png');
             link.click();
         }
         
-        // ========== 判断是否为浅色 ==========
+        // ========== å¤æ­æ¯å¦ä¸ºæµè² ==========
         function isLightColor(hex) {
             const r = parseInt(hex.slice(1, 3), 16);
             const g = parseInt(hex.slice(3, 5), 16);
@@ -1280,23 +1280,23 @@
             return luminance > 0.5;
         }
         
-        // ========== 下载材料清单 ==========
+        // ========== ä¸è½½æææ¸å ==========
         function downloadMaterialsList() {
             if (!patternData) return;
             
             const sortedColors = Object.values(patternData.colors).sort((a, b) => b.count - a.count);
             const total = sortedColors.reduce((sum, c) => sum + c.count, 0);
             
-            let content = '拼豆材料清单\n';
+            let content = 'æ¼è±æææ¸å\n';
             content += '================\n\n';
-            content += `品牌: ${patternData.brand}\n`;
-            content += `尺寸: ${patternData.width}×${patternData.height}\n`;
-            content += `总数量: ${total} 颗\n`;
-            content += `使用颜色: ${sortedColors.length} 种\n\n`;
+            content += `åç: ${patternData.brand}\n`;
+            content += `å°ºå¯¸: ${patternData.width}Ã${patternData.height}\n`;
+            content += `æ»æ°é: ${total} é¢\n`;
+            content += `ä½¿ç¨é¢è²: ${sortedColors.length} ç§\n\n`;
             content += '----------------\n';
-            content += '材料列表\n';
+            content += 'ææåè¡¨\n';
             content += '----------------\n\n';
-            content += '色号\t颜色\t数量\n';
+            content += 'è²å·\té¢è²\tæ°é\n';
             content += '----\t----\t----\n';
             
             sortedColors.forEach(color => {
@@ -1304,1325 +1304,12 @@
             });
             
             content += '\n----------------\n';
-            content += `总计: ${total} 颗\n`;
+            content += `æ»è®¡: ${total} é¢\n`;
             
-            // 创建并下载文件
+            // åå»ºå¹¶ä¸è½½æä»¶
             const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
             const link = document.createElement('a');
-            link.download = `材料清单_${patternData.width}x${patternData.height}_${patternData.brand}.txt`;
-            link.href = URL.createObjectURL(blob);
-            link.click();
-            URL.revokeObjectURL(link.href);
-        }
-    </script>
-</body>
-</html> <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧩 拼豆图纸生成器</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --success: #22c55e;
-            --danger: #ef4444;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: #334155;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 30px 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 30px;
-        }
-        
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 8px;
-        }
-        
-        header p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-        
-        .offline-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(34, 197, 94, 0.15);
-            color: var(--success);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-top: 12px;
-        }
-        
-        .offline-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--success);
-            border-radius: 50%;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-        }
-        
-        @media (max-width: 900px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid var(--border);
-        }
-        
-        .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .upload-area {
-            border: 2px dashed var(--border);
-            border-radius: 12px;
-            padding: 40px 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .upload-area:hover {
-            border-color: var(--primary);
-            background: rgba(99, 102, 241, 0.1);
-        }
-        
-        .upload-area.dragover {
-            border-color: var(--primary);
-            background: rgba(99, 102, 241, 0.2);
-        }
-        
-        .upload-icon {
-            font-size: 3rem;
-            margin-bottom: 12px;
-        }
-        
-        .upload-text {
-            color: var(--text-muted);
-            margin-bottom: 8px;
-        }
-        
-        .upload-hint {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-        
-        #fileInput {
-            display: none;
-        }
-        
-        .preview-container {
-            margin-top: 16px;
-            display: none;
-        }
-        
-        .preview-container.show {
-            display: block;
-        }
-        
-        .preview-img {
-            max-width: 100%;
-            max-height: 200px;
-            border-radius: 8px;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .controls {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        
-        .control-group {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-        
-        .control-label {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-        
-        .control-value {
-            font-size: 0.85rem;
-            color: var(--primary);
-            font-weight: 500;
-        }
-        
-        .radio-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        
-        .radio-option {
-            position: relative;
-        }
-        
-        .radio-option input {
-            position: absolute;
-            opacity: 0;
-        }
-        
-        .radio-option label {
-            display: block;
-            padding: 8px 16px;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-        
-        .radio-option input:checked + label {
-            background: var(--primary);
-            border-color: var(--primary);
-            color: white;
-        }
-        
-        .radio-option label:hover {
-            border-color: var(--primary);
-        }
-        
-        .buttons {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 8px;
-        }
-        
-        .btn {
-            flex: 1;
-            min-width: 140px;
-            padding: 14px 20px;
-            border: none;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
-        .btn-success {
-            background: var(--success);
-            color: white;
-        }
-        
-        .btn-success:hover {
-            background: #16a34a;
-            transform: translateY(-2px);
-        }
-        
-        .btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .result-card {
-            display: none;
-        }
-        
-        .result-card.show {
-            display: block;
-        }
-        
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-        
-        .stat-item {
-            background: var(--bg);
-            padding: 12px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        .stat-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-        
-        .pattern-preview {
-            background: white;
-            border-radius: 12px;
-            padding: 16px;
-            overflow: auto;
-            max-height: 400px;
-        }
-        
-        #patternCanvas {
-            display: block;
-            margin: 0 auto;
-            image-rendering: pixelated;
-        }
-        
-        .materials-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 16px;
-            font-size: 0.9rem;
-        }
-        
-        .materials-table th,
-        .materials-table td {
-            padding: 10px 12px;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .materials-table th {
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-        
-        .color-swatch {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .color-dot {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .download-section {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-        }
-        
-        .processing-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.8);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s;
-        }
-        
-        .processing-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .processing-text {
-            margin-top: 20px;
-            font-size: 1.1rem;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🧩 拼豆图纸生成器</h1>
-            <p>Delta E 2000 精确颜色映射 | 完全离线运行</p>
-            <div class="offline-badge">离线模式</div>
-        </header>
-        
-        <div class="grid">
-            <div class="card">
-                <div class="card-title">📤 上传图片</div>
-                <div class="upload-area" id="uploadArea">
-                    <div class="upload-icon">🖼️</div>
-                    <div class="upload-text">拖拽图片到这里</div>
-                    <div class="upload-hint">或点击选择文件 (支持 JPG/PNG/WebP，最大 50MB)</div>
-                </div>
-                <input type="file" id="fileInput" accept="image/*">
-                <div class="preview-container" id="previewContainer">
-                    <img id="previewImg" class="preview-img" alt="预览">
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">⚙️ 设置选项</div>
-                <div class="controls">
-                    <div class="control-group">
-                        <span class="control-label">品牌选择</span>
-                        <div class="radio-group">
-                            <div class="radio-option">
-                                <input type="radio" name="brand" id="perler" value="perler" checked>
-                                <label for="perler">Perler Beads (57色)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="brand" id="hama" value="hama">
-                                <label for="hama">Hama Beads (41色)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="brand" id="artkal" value="artkal">
-                                <label for="artkal">ArtKal Beads (159色)</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="control-group">
-                        <span class="control-label">
-                            网格尺寸 
-                            <span class="control-value" id="gridSizeValue">29 × 29</span>
-                        </span>
-                        <div class="radio-group">
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g15" value="15">
-                                <label for="g15">15×15 (小)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g29" value="29" checked>
-                                <label for="g29">29×29 (中)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g58" value="58">
-                                <label for="g58">58×58 (大)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g90" value="90">
-                                <label for="g90">90×90 (特大)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g120" value="120">
-                                <label for="g120">120×120 (超大)</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="gridSize" id="g150" value="150">
-                                <label for="g150">150×150 (极限)</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="control-group">
-                        <span class="control-label">背景颜色</span>
-                        <div class="radio-group">
-                            <div class="radio-option">
-                                <input type="radio" name="bgColor" id="bgWhite" value="#FFFFFF" checked>
-                                <label for="bgWhite">白色</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="bgColor" id="bgBlack" value="#000000">
-                                <label for="bgBlack">黑色</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="bgColor" id="bgGray" value="#808080">
-                                <label for="bgGray">灰色</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="buttons">
-                        <button class="btn btn-primary" id="generateBtn" disabled>
-                            ✨ 生成图纸
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card result-card" id="resultCard">
-            <div class="card-title">📊 预览结果</div>
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-value" id="statBrand">Perler</div>
-                    <div class="stat-label">品牌</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" id="statGrid">29×29</div>
-                    <div class="stat-label">网格尺寸</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" id="statTotal">0</div>
-                    <div class="stat-label">总拼豆数</div>
-                </div>
-            </div>
-            
-            <div class="pattern-preview">
-                <canvas id="patternCanvas"></canvas>
-            </div>
-            
-            <div class="download-section">
-                <div class="buttons">
-                    <button class="btn btn-success" id="downloadPngBtn">
-                        📥 下载 PNG 图纸
-                    </button>
-                    <button class="btn btn-primary" id="downloadListBtn">
-                        📋 下载材料清单
-                    </button>
-                </div>
-            </div>
-            
-            <div class="materials-list" id="materialsList"></div>
-        </div>
-        
-        <footer>
-            拼豆图纸生成器 | 完全离线运行，无需上传您的图片
-        </footer>
-    </div>
-    
-    <div class="processing-overlay" id="processingOverlay">
-        <div class="spinner"></div>
-        <div class="processing-text">正在生成图纸...</div>
-    </div>
-    
-    <script>
-        // ========== 拼豆色卡数据 ==========
-        const BEAD_COLORS = {
-            perler: [
-                { id: 'P001', name: '白色', hex: '#FFFFFF' },
-                { id: 'P002', name: '黑色', hex: '#1A1A1A' },
-                { id: 'P003', name: '灰色', hex: '#9E9E9E' },
-                { id: 'P004', name: '红色', hex: '#E53935' },
-                { id: 'P005', name: '深红', hex: '#C62828' },
-                { id: 'P006', name: '橙红', hex: '#FF5722' },
-                { id: 'P007', name: '橙色', hex: '#FF9800' },
-                { id: 'P008', name: '黄色', hex: '#FFEB3B' },
-                { id: 'P009', name: '柠檬黄', hex: '#FFEE58' },
-                { id: 'P010', name: '金色', hex: '#FFC107' },
-                { id: 'P011', name: '浅绿', hex: '#8BC34A' },
-                { id: 'P012', name: '绿色', hex: '#4CAF50' },
-                { id: 'P013', name: '深绿', hex: '#2E7D32' },
-                { id: 'P014', name: '青绿', hex: '#009688' },
-                { id: 'P015', name: '青色', hex: '#00BCD4' },
-                { id: 'P016', name: '天蓝', hex: '#03A9F4' },
-                { id: 'P017', name: '蓝色', hex: '#2196F3' },
-                { id: 'P018', name: '深蓝', hex: '#1565C0' },
-                { id: 'P019', name: '海军蓝', hex: '#0D47A1' },
-                { id: 'P020', name: '紫色', hex: '#9C27B0' },
-                { id: 'P021', name: '深紫', hex: '#6A1B9A' },
-                { id: 'P022', name: '品红', hex: '#E91E63' },
-                { id: 'P023', name: '粉色', hex: '#F48FB1' },
-                { id: 'P024', name: '浅粉', hex: '#F8BBD9' },
-                { id: 'P025', name: '玫瑰', hex: '#FFCDD2' },
-                { id: 'P026', name: '棕色', hex: '#795548' },
-                { id: 'P027', name: '深棕', hex: '#5D4037' },
-                { id: 'P028', name: '浅棕', hex: '#A1887F' },
-                { id: 'P029', name: '米色', hex: '#D7CCC8' },
-                { id: 'P030', name: '奶油', hex: '#FFF8E1' },
-                { id: 'P031', name: '象牙', hex: '#FFFFF0' },
-                { id: 'P032', name: '肉色', hex: '#FFCCBC' },
-                { id: 'P033', name: '肤色', hex: '#FFE0B2' },
-                { id: 'P034', name: '杏色', hex: '#FFCC80' },
-                { id: 'P035', name: '桃色', hex: '#FFAB91' },
-                { id: 'P036', name: '珊瑚', hex: '#FF7043' },
-                { id: 'P037', name: '酒红', hex: '#880E4F' },
-                { id: 'P038', name: '栗色', hex: '#AD1457' },
-                { id: 'P039', name: '酱色', hex: '#6D4C41' },
-                { id: 'P040', name: '咖啡', hex: '#4E342E' },
-                { id: 'P041', name: '可可', hex: '#3E2723' },
-                { id: 'P042', name: '藏青', hex: '#1A237E' },
-                { id: 'P043', name: '靛蓝', hex: '#283593' },
-                { id: 'P044', name: '薰衣草', hex: '#CE93D8' },
-                { id: 'P045', name: '淡紫', hex: '#E1BEE7' },
-                { id: 'P046', name: '薄荷', hex: '#A5D6A7' },
-                { id: 'P047', name: '松石绿', hex: '#80CBC4' },
-                { id: 'P048', name: '海蓝', hex: '#4DD0E1' },
-                { id: 'P049', name: '湖蓝', hex: '#4FC3F7' },
-                { id: 'P050', name: '天空蓝', hex: '#81D4FA' },
-                { id: 'P051', name: '浅蓝', hex: '#B3E5FC' },
-                { id: 'P052', name: '矢车菊', hex: '#90CAF9' },
-                { id: 'P053', name: '雾蓝', hex: '#64B5F6' },
-                { id: 'P054', name: '钴蓝', hex: '#42A5F5' },
-                { id: 'P055', name: '宝石蓝', hex: '#1E88E5' },
-                { id: 'P056', name: '翠绿', hex: '#00C853' },
-                { id: 'P057', name: '草绿', hex: '#7CB342' }
-            ],
-            hama: [
-                { id: 'H001', name: '白色', hex: '#FFFFFF' },
-                { id: 'H002', name: '黑色', hex: '#000000' },
-                { id: 'H003', name: '红色', hex: '#FF0000' },
-                { id: 'H004', name: '深红', hex: '#CC0000' },
-                { id: 'H005', name: '酒红', hex: '#990000' },
-                { id: 'H006', name: '粉红', hex: '#FF69B4' },
-                { id: 'H007', name: '浅粉', hex: '#FFB6C1' },
-                { id: 'H008', name: '橙色', hex: '#FF6600' },
-                { id: 'H009', name: '深橙', hex: '#FF3300' },
-                { id: 'H010', name: '黄色', hex: '#FFFF00' },
-                { id: 'H011', name: '浅黄', hex: '#FFFF99' },
-                { id: 'H012', name: '金色', hex: '#FFD700' },
-                { id: 'H013', name: '绿色', hex: '#00CC00' },
-                { id: 'H014', name: '深绿', hex: '#009900' },
-                { id: 'H015', name: '浅绿', hex: '#99FF99' },
-                { id: 'H016', name: '青色', hex: '#00CCCC' },
-                { id: 'H017', name: '蓝色', hex: '#0066FF' },
-                { id: 'H018', name: '深蓝', hex: '#0000CC' },
-                { id: 'H019', name: '浅蓝', hex: '#99CCFF' },
-                { id: 'H020', name: '天蓝', hex: '#66CCFF' },
-                { id: 'H021', name: '紫色', hex: '#9933FF' },
-                { id: 'H022', name: '深紫', hex: '#6600CC' },
-                { id: 'H023', name: '浅紫', hex: '#CC99FF' },
-                { id: 'H024', name: '棕色', hex: '#993300' },
-                { id: 'H025', name: '深棕', hex: '#663300' },
-                { id: 'H026', name: '浅棕', hex: '#CC9966' },
-                { id: 'H027', name: '米色', hex: '#FFFFCC' },
-                { id: 'H028', name: '灰色', hex: '#999999' },
-                { id: 'H029', name: '深灰', hex: '#666666' },
-                { id: 'H030', name: '浅灰', hex: '#CCCCCC' },
-                { id: 'H031', name: '肤色', hex: '#FFCC99' },
-                { id: 'H032', name: '桃色', hex: '#FF9999' },
-                { id: 'H033', name: '玫瑰', hex: '#FF6699' },
-                { id: 'H034', name: '珊瑚', hex: '#FF6666' },
-                { id: 'H035', name: '薄荷', hex: '#66FFCC' },
-                { id: 'H036', name: '橄榄', hex: '#808000' },
-                { id: 'H037', name: '军绿', hex: '#556B2F' },
-                { id: 'H038', name: '松石', hex: '#40E0D0' },
-                { id: 'H039', name: '宝蓝', hex: '#4169E1' },
-                { id: 'H040', name: '品蓝', hex: '#000080' },
-                { id: 'H041', name: '玫瑰金', hex: '#E8B4B8' }
-            ],
-            artkal: [
-                { id: 'A001', name: '白色', hex: '#FFFFFF' },
-                { id: 'A002', name: '象牙白', hex: '#FFFFF0' },
-                { id: 'A003', name: '米色', hex: '#F5F5DC' },
-                { id: 'A004', name: '浅灰', hex: '#D3D3D3' },
-                { id: 'A005', name: '灰色', hex: '#808080' },
-                { id: 'A006', name: '深灰', hex: '#696969' },
-                { id: 'A007', name: '炭灰', hex: '#36454F' },
-                { id: 'A008', name: '黑色', hex: '#000000' },
-                { id: 'A009', name: '奶油黄', hex: '#FFFDD0' },
-                { id: 'A010', name: '淡黄', hex: '#FFFACD' },
-                { id: 'A011', name: '柠檬黄', hex: '#FFF44F' },
-                { id: 'A012', name: '黄色', hex: '#FFD700' },
-                { id: 'A013', name: '金黄', hex: '#DAA520' },
-                { id: 'A014', name: '琥珀', hex: '#FFBF00' },
-                { id: 'A015', name: '橙黄', hex: '#FFAE42' },
-                { id: 'A016', name: '南瓜', hex: '#FF7518' },
-                { id: 'A017', name: '橙色', hex: '#FF6600' },
-                { id: 'A018', name: '深橙', hex: '#FF4500' },
-                { id: 'A019', name: '珊瑚', hex: '#FF7F50' },
-                { id: 'A020', name: '番茄红', hex: '#FF6347' },
-                { id: 'A021', name: '红色', hex: '#FF0000' },
-                { id: 'A022', name: '深红', hex: '#DC143C' },
-                { id: 'A023', name: '酒红', hex: '#722F37' },
-                { id: 'A024', name: '栗色', hex: '#800000' },
-                { id: 'A025', name: '暗红', hex: '#8B0000' },
-                { id: 'A026', name: '胭脂红', hex: '#960018' },
-                { id: 'A027', name: '朱红', hex: '#C41E3A' },
-                { id: 'A028', name: '洋红', hex: '#FF00FF' },
-                { id: 'A029', name: '品红', hex: '#FF0080' },
-                { id: 'A030', name: '深粉', hex: '#FF1493' },
-                { id: 'A031', name: '玫瑰红', hex: '#FF007F' },
-                { id: 'A032', name: '粉红', hex: '#FF69B4' },
-                { id: 'A033', name: '浅粉', hex: '#FFB6C1' },
-                { id: 'A034', name: '淡粉', hex: '#FFC0CB' },
-                { id: 'A035', name: '贝壳粉', hex: '#FFF0F5' },
-                { id: 'A036', name: '桃色', hex: '#FFDAB9' },
-                { id: 'A037', name: '杏色', hex: '#FFE4B5' },
-                { id: 'A038', name: '蜜桃', hex: '#FFCBA4' },
-                { id: 'A039', name: '肉色', hex: '#FFE4C4' },
-                { id: 'A040', name: '肤色', hex: '#FFCD94' },
-                { id: 'A041', name: '浅橙', hex: '#FFA07A' },
-                { id: 'A042', name: '珊瑚色', hex: '#F88379' },
-                { id: 'A043', name: '印度红', hex: '#CD5C5C' },
-                { id: 'A044', name: '印度棕', hex: '#C68642' },
-                { id: 'A045', name: '浅棕', hex: '#D2B48C' },
-                { id: 'A046', name: '棕色', hex: '#A0522D' },
-                { id: 'A047', name: '深棕', hex: '#8B4513' },
-                { id: 'A048', name: '巧克力', hex: '#7B3F00' },
-                { id: 'A049', name: '咖啡', hex: '#6F4E37' },
-                { id: 'A050', name: '摩卡', hex: '#967969' },
-                { id: 'A051', name: '可可', hex: '#C4A484' },
-                { id: 'A052', name: '卡其', hex: '#F0E68C' },
-                { id: 'A053', name: '橄榄', hex: '#808000' },
-                { id: 'A054', name: '橄榄绿', hex: '#556B2F' },
-                { id: 'A055', name: '苔绿', hex: '#6B8E23' },
-                { id: 'A056', name: '黄绿', hex: '#9ACD32' },
-                { id: 'A057', name: '草绿', hex: '#7CFC00' },
-                { id: 'A058', name: '浅绿', hex: '#90EE90' },
-                { id: 'A059', name: '薄荷', hex: '#98FF98' },
-                { id: 'A060', name: '翠绿', hex: '#00FF7F' },
-                { id: 'A061', name: '绿色', hex: '#008000' },
-                { id: 'A062', name: '深绿', hex: '#006400' },
-                { id: 'A063', name: '森林绿', hex: '#228B22' },
-                { id: 'A064', name: '海绿', hex: '#2E8B57' },
-                { id: 'A065', name: '祖母绿', hex: '#50C878' },
-                { id: 'A066', name: '青绿', hex: '#00FA9A' },
-                { id: 'A067', name: '薄荷绿', hex: '#3EB489' },
-                { id: 'A068', name: '青草绿', hex: '#7CFC00' },
-                { id: 'A069', name: '明绿', hex: '#00FF00' },
-                { id: 'A070', name: '荧光绿', hex: '#ADFF2F' },
-                { id: 'A071', name: '嫩绿', hex: '#B8E994' },
-                { id: 'A072', name: '松石绿', hex: '#40E0D0' },
-                { id: 'A073', name: '绿松石', hex: '#30D5C8' },
-                { id: 'A074', name: '青色', hex: '#00FFFF' },
-                { id: 'A075', name: '浅青', hex: '#E0FFFF' },
-                { id: 'A076', name: '绿松石蓝', hex: '#00CED1' },
-                { id: 'A077', name: '深青', hex: '#008B8B' },
-                { id: 'A078', name: '蓝绿', hex: '#20B2AA' },
-                { id: 'A079', name: '中绿', hex: '#66CDAA' },
-                { id: 'A080', name: '天蓝', hex: '#87CEEB' },
-                { id: 'A081', name: '浅蓝', hex: '#ADD8E6' },
-                { id: 'A082', name: '淡蓝', hex: '#B0E0E6' },
-                { id: 'A083', name: '浅钢蓝', hex: '#B0C4DE' },
-                { id: 'A084', name: '矢车菊蓝', hex: '#6495ED' },
-                { id: 'A085', name: '浅蓝', hex: '#87CEFA' },
-                { id: 'A086', name: '天蓝色', hex: '#87CEEB' },
-                { id: 'A087', name: '粉蓝', hex: '#93B8D6' },
-                { id: 'A088', name: '蓝灰', hex: '#778899' },
-                { id: 'A089', name: '浅灰蓝', hex: '#A0B8C8' },
-                { id: 'A090', name: '蓝色', hex: '#0000FF' },
-                { id: 'A091', name: '钴蓝', hex: '#0047AB' },
-                { id: 'A092', name: '品蓝', hex: '#4169E1' },
-                { id: 'A093', name: '皇家蓝', hex: '#4169E1' },
-                { id: 'A094', name: '深蓝', hex: '#0000CD' },
-                { id: 'A095', name: '海军蓝', hex: '#000080' },
-                { id: 'A096', name: '午夜蓝', hex: '#191970' },
-                { id: 'A097', name: '靛蓝', hex: '#4B0082' },
-                { id: 'A098', name: '藏青', hex: '#1E3A5F' },
-                { id: 'A099', name: '普鲁士蓝', hex: '#003153' },
-                { id: 'A100', name: '浅紫', hex: '#E6E6FA' },
-                { id: 'A101', name: '淡紫', hex: '#D8BFD8' },
-                { id: 'A102', name: '薰衣草', hex: '#E6E6FA' },
-                { id: 'A103', name: '紫丁香', hex: '#C8A2C8' },
-                { id: 'A104', name: '浅紫罗兰', hex: '#CDBA96' },
-                { id: 'A105', name: '紫色', hex: '#800080' },
-                { id: 'A106', name: '深紫', hex: '#4B0082' },
-                { id: 'A107', name: '三色堇', hex: '#EE82EE' },
-                { id: 'A108', name:: '亮紫', hex: '#BF00FF' },
-                { id: 'A109', name: '兰紫色', hex: '#9932CC' },
-                { id: 'A110', name: '中紫', hex: '#9370DB' },
-                { id: 'A111', name: '浅紫', hex: '#DA70D6' },
-                { id: 'A112', name: '兰花紫', hex: '#DA70D6' },
-                { id: 'A113', name: '紫红色', hex: '#C71585' },
-                { id: 'A114', name: '品红红', hex: '#FF00FF' },
-                { id: 'A115', name: '深粉红', hex: '#FF1493' },
-                { id: 'A116', name: '亮粉', hex: '#FF69B4' },
-                { id: 'A117', name: '热粉', hex: '#FF69B4' },
-                { id: 'A118', name: '粉红', hex: '#FFB6C1' },
-                { id: 'A119', name: '浅粉红', hex: '#FFB6C1' },
-                { id: 'A120', name: '樱粉', hex: '#FFC0CB' },
-                { id: 'A121', name: '暖白', hex: '#FAEBD7' },
-                { id: 'A122', name: '古董白', hex: '#FAEBD7' },
-                { id: 'A123', name: '花白', hex: '#FFFAF0' },
-                { id: 'A124', name: '烟白', hex: '#F5F5F5' },
-                { id: 'A125', name: '雪白', hex: '#FFFAFA' },
-                { id: 'A126', name: '白烟', hex: '#F5F5F5' },
-                { id: 'A127', name: '浅灰', hex: '#D3D3D3' },
-                { id: 'A128', name: '银色', hex: '#C0C0C0' },
-                { id: 'A129', name: '暗灰', hex: '#A9A9A9' },
-                { id: 'A130', name: '灰色', hex: '#808080' },
-                { id: 'A131', name: '深灰', hex: '#696969' },
-                { id: 'A132', name: '炭灰', hex: '#36454F' },
-                { id: 'A133', name: '铁灰', hex: '#778899' },
-                { id: 'A134', name: '岩灰', hex: '#6E6E6E' },
-                { id: 'A135', name: '石墨', hex: '#4D4D4D' },
-                { id: 'A136', name: '黑灰', hex: '#2B2B2B' },
-                { id: 'A137', name: '石油', hex: '#2B2B2B' },
-                { id: 'A138', name: '煤', hex: '#1C1C1C' },
-                { id: 'A139', name: '乌黑', hex: '#0D0D0D' },
-                { id: 'A140', name: '夜色', hex: '#0A0A14' },
-                { id: 'A141', name: '深紫蓝', hex: '#301934' },
-                { id: 'A142', name: '李子', hex: '#580F41' },
-                { id: 'A143', name: '梅红', hex: '#840842' },
-                { id: 'A144', name: '覆盆子', hex: '#E30B5C' },
-                { id: 'A145', name: '草莓', hex: '#FC4C4E' },
-                { id: 'A146', name: '西瓜', hex: '#F25C63' },
-                { id: 'A147', name: '焦糖', hex: '#FFD59A' },
-                { id: 'A148', name: '太妃糖', hex: '#AF7846' },
-                { id: 'A149', name: '榛子', hex: '#8B7355' },
-                { id: 'A150', name: '开心果', hex: '#93C572' },
-                { id: 'A151', name: '酸橙', hex: '#32CD32' },
-                { id: 'A152', name: '青柠', hex: '#00FF00' },
-                { id: 'A153', name: '奇异果', hex: '#8EE53F' },
-                { id: 'A154', name: '蓝绿', hex: '#2DD4BF' },
-                { id: 'A155', name: '加勒比海', hex: '#00CC99' },
-                { id: 'A156', name: '太平洋', hex: '#009DC4' },
-                { id: 'A157', name: '知更鸟', hex: '#30B5E5' },
-                { id: 'A158', name: '电光蓝', hex: '#00BFFF' },
-                { id: 'A159', name: '霓虹蓝', hex: '#0080FF' }
-            ]
-        };
-        
-        // ========== Delta E 2000 颜色距离算法 ==========
-        function hexToLab(hex) {
-            // Convert hex to RGB
-            let r = parseInt(hex.slice(1, 3), 16) / 255;
-            let g = parseInt(hex.slice(3, 5), 16) / 255;
-            let b = parseInt(hex.slice(5, 7), 16) / 255;
-            
-            // Apply gamma correction
-            r = r > 0.04045 ? Math.pow((r + 0.055) / 1.055, 2.4) : r / 12.92;
-            g = g > 0.04045 ? Math.pow((g + 0.055) / 1.055, 2.4) : g / 12.92;
-            b = b > 0.04045 ? Math.pow((b + 0.055) / 1.055, 2.4) : b / 12.92;
-            
-            // Convert to XYZ
-            let x = (r * 0.4124564 + g * 0.3575761 + b * 0.1804375) / 0.95047;
-            let y = (r * 0.2126729 + g * 0.7151522 + b * 0.0721750);
-            let z = (r * 0.0193339 + g * 0.1191920 + b * 0.9503041) / 1.08883;
-            
-            // Apply D65 illuminant
-            x = x > 0.008856 ? Math.pow(x, 1/3) : (7.787 * x) + 16/116;
-            y = y > 0.008856 ? Math.pow(y, 1/3) : (7.787 * y) + 16/116;
-            z = z > 0.008856 ? Math.pow(z, 1/3) : (7.787 * z) + 16/116;
-            
-            return {
-                L: (116 * y) - 16,
-                a: 500 * (x - y),
-                b: 200 * (y - z)
-            };
-        }
-        
-        function deltaE2000(lab1, lab2) {
-            const kL = 1, kC = 1, kH = 1;
-            
-            const C1 = Math.sqrt(lab1.a * lab1.a + lab1.b * lab1.b);
-            const C2 = Math.sqrt(lab2.a * lab2.a + lab2.b * lab2.b);
-            const Cab = (C1 + C2) / 2;
-            const Cab7 = Math.pow(Cab, 7);
-            const G = 0.5 * (1 - Math.sqrt(Cab7 / (Cab7 + Math.pow(25, 7))));
-            
-            const a1p = lab1.a * (1 + G);
-            const a2p = lab2.a * (1 + G);
-            
-            const C1p = Math.sqrt(a1p * a1p + lab1.b * lab1.b);
-            const C2p = Math.sqrt(a2p * a2p + lab2.b * lab2.b);
-            
-            let h1p = Math.atan2(lab1.b, a1p) * 180 / Math.PI;
-            if (h1p < 0) h1p += 360;
-            
-            let h2p = Math.atan2(lab2.b, a2p) * 180 / Math.PI;
-            if (h2p < 0) h2p += 360;
-            
-            const dLp = lab2.L - lab1.L;
-            const dCp = C2p - C1p;
-            
-            let dhp = h2p - h1p;
-            if (dhp > 180) dhp -= 360;
-            else if (dhp < -180) dhp += 360;
-            
-            const dHp = 2 * Math.sqrt(C1p * C2p) * Math.sin(dhp * Math.PI / 360);
-            
-            const Lp = (lab1.L + lab2.L) / 2;
-            const Cp = (C1p + C2p) / 2;
-            
-            let Hp = h1p + h2p;
-            if (dhp > 180) Hp += 180;
-            else if (dhp < -180) Hp -= 180;
-            if (Hp < 0) Hp += 360;
-            else if (Hp >= 360) Hp -= 360;
-            
-            const T = 1 - 0.17 * Math.cos((Hp - 30) * Math.PI / 180)
-                     + 0.24 * Math.cos(2 * Hp * Math.PI / 180)
-                     + 0.32 * Math.cos((3 * Hp + 6) * Math.PI / 180)
-                     - 0.20 * Math.cos((4 * Hp - 63) * Math.PI / 180);
-            
-            const Lp50 = Math.pow(Lp - 50, 2);
-            const SL = 1 + (0.015 * Lp50) / Math.sqrt(20 + Lp50);
-            const SC = 1 + 0.045 * Cp;
-            const SH = 1 + 0.015 * Cp * T;
-            
-            const dTheta = 30 * Math.exp(-Math.pow((Hp - 275) / 25, 2));
-            const Cp7 = Math.pow(Cp, 7);
-            const RC = 2 * Math.sqrt(Cp7 / (Cp7 + Math.pow(25, 7)));
-            const RT = -RC * Math.sin(2 * dTheta * Math.PI / 180);
-            
-            return Math.sqrt(
-                Math.pow(dLp / (kL * SL), 2) +
-                Math.pow(dCp / (kC * SC), 2) +
-                Math.pow(dHp / (kH * SH), 2) +
-                RT * (dCp / (kC * SC)) * (dHp / (kH * SH))
-            );
-        }
-        
-        // ========== 颜色匹配 ==========
-        function findClosestColor(hex, colorArray) {
-            const lab1 = hexToLab(hex);
-            let minDelta = Infinity;
-            let closestColor = colorArray[0];
-            
-            for (const color of colorArray) {
-                const lab2 = hexToLab(color.hex);
-                const delta = deltaE2000(lab1, lab2);
-                if (delta < minDelta) {
-                    minDelta = delta;
-                    closestColor = color;
-                }
-            }
-            
-            return closestColor;
-        }
-        
-        // ========== 全局状态 ==========
-        let currentImage = null;
-        let patternData = null;
-        let selectedBrand = 'perler';
-        let selectedGridSize = 29;
-        let selectedBgColor = '#FFFFFF';
-        
-        // ========== DOM 元素 ==========
-        const uploadArea = document.getElementById('uploadArea');
-        const fileInput = document.getElementById('fileInput');
-        const previewContainer = document.getElementById('previewContainer');
-        const previewImg = document.getElementById('previewImg');
-        const generateBtn = document.getElementById('generateBtn');
-        const resultCard = document.getElementById('resultCard');
-        const patternCanvas = document.getElementById('patternCanvas');
-        const processingOverlay = document.getElementById('processingOverlay');
-        
-        // ========== 事件监听 ==========
-        uploadArea.addEventListener('click', () => fileInput.click());
-        
-        uploadArea.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            uploadArea.classList.add('dragover');
-        });
-        
-        uploadArea.addEventListener('dragleave', () => {
-            uploadArea.classList.remove('dragover');
-        });
-        
-        uploadArea.addEventListener('drop', (e) => {
-            e.preventDefault();
-            uploadArea.classList.remove('dragover');
-            const file = e.dataTransfer.files[0];
-            if (file && file.type.startsWith('image/')) {
-                handleFile(file);
-            }
-        });
-        
-        fileInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (file) {
-                handleFile(file);
-            }
-        });
-        
-        // 品牌选择
-        document.querySelectorAll('input[name="brand"]').forEach(input => {
-            input.addEventListener('change', (e) => {
-                selectedBrand = e.target.value;
-            });
-        });
-        
-        // 网格尺寸选择
-        document.querySelectorAll('input[name="gridSize"]').forEach(input => {
-            input.addEventListener('change', (e) => {
-                selectedGridSize = parseInt(e.target.value);
-                document.getElementById('gridSizeValue').textContent = `${selectedGridSize} × ${selectedGridSize}`;
-            });
-        });
-        
-        // 背景颜色选择
-        document.querySelectorAll('input[name="bgColor"]').forEach(input => {
-            input.addEventListener('change', (e) => {
-                selectedBgColor = e.target.value;
-            });
-        });
-        
-        generateBtn.addEventListener('click', generatePattern);
-        
-        document.getElementById('downloadPngBtn').addEventListener('click', downloadPng);
-        document.getElementById('downloadListBtn').addEventListener('click', downloadMaterialsList);
-        
-        // ========== 处理文件 ==========
-        function handleFile(file) {
-            if (file.size > 50 * 1024 * 1024) {
-                alert('文件太大，请选择小于 50MB 的图片');
-                return;
-            }
-            
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                const img = new Image();
-                img.onload = () => {
-                    currentImage = img;
-                    previewImg.src = e.target.result;
-                    previewContainer.classList.add('show');
-                    generateBtn.disabled = false;
-                };
-                img.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-        
-        // ========== 生成图纸 ==========
-        async function generatePattern() {
-            if (!currentImage) return;
-            
-            processingOverlay.classList.add('show');
-            
-            // 使用 requestAnimationFrame 让 UI 有时间更新
-            await new Promise(resolve => requestAnimationFrame(resolve));
-            
-            try {
-                const gridSize = selectedGridSize;
-                const colors = BEAD_COLORS[selectedBrand];
-                const bgColor = selectedBgColor;
-                
-                // 创建临时 canvas 来处理图像
-                const tempCanvas = document.createElement('canvas');
-                const tempCtx = tempCanvas.getContext('2d');
-                
-                // 计算网格尺寸
-                const aspectRatio = currentImage.height / currentImage.width;
-                const gridWidth = gridSize;
-                const gridHeight = Math.round(gridSize * aspectRatio);
-                
-                tempCanvas.width = gridWidth;
-                tempCanvas.height = gridHeight;
-                
-                // 绘制并缩放图像
-                tempCtx.drawImage(currentImage, 0, 0, gridWidth, gridHeight);
-                
-                // 获取图像数据
-                const imageData = tempCtx.getImageData(0, 0, gridWidth, gridHeight);
-                const pixels = imageData.data;
-                
-                // 创建图案数据
-                patternData = {
-                    width: gridWidth,
-                    height: gridHeight,
-                    grid: [],
-                    colors: {},
-                    bgColor: bgColor,
-                    brand: selectedBrand
-                };
-                
-                // 处理每个像素
-                for (let y = 0; y < gridHeight; y++) {
-                    patternData.grid[y] = [];
-                    for (let x = 0; x < gridWidth; x++) {
-                        const i = (y * gridWidth + x) * 4;
-                        const r = pixels[i];
-                        const g = pixels[i + 1];
-                        const b = pixels[i + 2];
-                        
-                        const hex = '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
-                        const closestColor = findClosestColor(hex, colors);
-                        
-                        patternData.grid[y][x] = closestColor;
-                        
-                        // 统计颜色
-                        if (!patternData.colors[closestColor.id]) {
-                            patternData.colors[closestColor.id] = {
-                                ...closestColor,
-                                count: 0
-                            };
-                        }
-                        patternData.colors[closestColor.id].count++;
-                    }
-                }
-                
-                // 绘制预览
-                await drawPattern();
-                
-                // 更新统计
-                updateStats();
-                
-                // 显示结果
-                resultCard.classList.add('show');
-                
-            } catch (error) {
-                console.error('生成图纸失败:', error);
-                alert('生成图纸时发生错误，请重试');
-            } finally {
-                processingOverlay.classList.remove('show');
-            }
-        }
-        
-        // ========== 绘制图纸 ==========
-        async function drawPattern() {
-            const cellSize = 12; // 每个格子的像素大小
-            const canvas = patternCanvas;
-            const ctx = canvas.getContext('2d');
-            
-            canvas.width = patternData.width * cellSize;
-            canvas.height = patternData.height * cellSize;
-            
-            // 绘制每个格子
-            for (let y = 0; y < patternData.height; y++) {
-                for (let x = 0; x < patternData.width; x++) {
-                    const color = patternData.grid[y][x];
-                    
-                    // 绘制圆形拼豆
-                    ctx.fillStyle = color.hex;
-                    ctx.beginPath();
-                    const cx = x * cellSize + cellSize / 2;
-                    const cy = y * cellSize + cellSize / 2;
-                    const r = cellSize / 2 - 1;
-                    ctx.arc(cx, cy, r, 0, Math.PI * 2);
-                    ctx.fill();
-                    
-                    // 添加边框
-                    ctx.strokeStyle = 'rgba(0,0,0,0.2)';
-                    ctx.lineWidth = 0.5;
-                    ctx.stroke();
-                }
-            }
-            
-            // 绘制网格线
-            ctx.strokeStyle = 'rgba(0,0,0,0.1)';
-            ctx.lineWidth = 0.5;
-            
-            for (let x = 0; x <= patternData.width; x++) {
-                ctx.beginPath();
-                ctx.moveTo(x * cellSize, 0);
-                ctx.lineTo(x * cellSize, canvas.height);
-                ctx.stroke();
-            }
-            
-            for (let y = 0; y <= patternData.height; y++) {
-                ctx.beginPath();
-                ctx.moveTo(0, y * cellSize);
-                ctx.lineTo(canvas.width, y * cellSize);
-                ctx.stroke();
-            }
-        }
-        
-        // ========== 更新统计 ==========
-        function updateStats() {
-            const brandNames = {
-                perler: 'Perler',
-                hama: 'Hama',
-                artkal: 'ArtKal'
-            };
-            
-            document.getElementById('statBrand').textContent = brandNames[selectedBrand];
-            document.getElementById('statGrid').textContent = `${patternData.width}×${patternData.height}`;
-            
-            const total = Object.values(patternData.colors).reduce((sum, c) => sum + c.count, 0);
-            document.getElementById('statTotal').textContent = total.toLocaleString();
-            
-            // 更新材料列表
-            const materialsList = document.getElementById('materialsList');
-            const sortedColors = Object.values(patternData.colors).sort((a, b) => b.count - a.count);
-            
-            let html = `
-                <table class="materials-table">
-                    <thead>
-                        <tr>
-                            <th>颜色</th>
-                            <th>色号</th>
-                            <th>数量</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-            
-            sortedColors.forEach(color => {
-                html += `
-                    <tr>
-                        <td>
-                            <div class="color-swatch">
-                                <span class="color-dot" style="background: ${color.hex}"></span>
-                                ${color.name}
-                            </div>
-                        </td>
-                        <td>${color.id}</td>
-                        <td>${color.count}</td>
-                    </tr>
-                `;
-            });
-            
-            html += '</tbody></table>';
-            materialsList.innerHTML = html;
-        }
-        
-        // ========== 下载 PNG ==========
-        function downloadPng() {
-            if (!patternData) return;
-            
-            const cellSize = 20; // 高清版本的格子大小
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            
-            canvas.width = patternData.width * cellSize;
-            canvas.height = patternData.height * cellSize;
-            
-            // 绘制背景
-            ctx.fillStyle = patternData.bgColor;
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            // 绘制每个格子
-            for (let y = 0; y < patternData.height; y++) {
-                for (let x = 0; x < patternData.width; x++) {
-                    const color = patternData.grid[y][x];
-                    
-                    ctx.fillStyle = color.hex;
-                    ctx.beginPath();
-                    const cx = x * cellSize + cellSize / 2;
-                    const cy = y * cellSize + cellSize / 2;
-                    const r = cellSize / 2 - 1;
-                    ctx.arc(cx, cy, r, 0, Math.PI * 2);
-                    ctx.fill();
-                    
-                    // 添加边框
-                    ctx.strokeStyle = 'rgba(0,0,0,0.3)';
-                    ctx.lineWidth = 1;
-                    ctx.stroke();
-                    
-                    // 绘制色号
-                    ctx.fillStyle = isLightColor(color.hex) ? '#000' : '#FFF';
-                    ctx.font = `bold ${Math.max(8, cellSize / 4)}px Arial`;
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-                    ctx.fillText(color.id.replace(/^[PHA]\d/, ''), cx, cy);
-                }
-            }
-            
-            // 绘制网格线
-            ctx.strokeStyle = 'rgba(0,0,0,0.5)';
-            ctx.lineWidth = 1;
-            
-            for (let x = 0; x <= patternData.width; x++) {
-                ctx.beginPath();
-                ctx.moveTo(x * cellSize, 0);
-                ctx.lineTo(x * cellSize, canvas.height);
-                ctx.stroke();
-            }
-            
-            for (let y = 0; y <= patternData.height; y++) {
-                ctx.beginPath();
-                ctx.moveTo(0, y * cellSize);
-                ctx.lineTo(canvas.width, y * cellSize);
-                ctx.stroke();
-            }
-            
-            // 下载
-            const link = document.createElement('a');
-            link.download = `拼豆图纸_${patternData.width}x${patternData.height}_${patternData.brand}.png`;
-            link.href = canvas.toDataURL('image/png');
-            link.click();
-        }
-        
-        // ========== 判断是否为浅色 ==========
-        function isLightColor(hex) {
-            const r = parseInt(hex.slice(1, 3), 16);
-            const g = parseInt(hex.slice(3, 5), 16);
-            const b = parseInt(hex.slice(5, 7), 16);
-            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-            return luminance > 0.5;
-        }
-        
-        // ========== 下载材料清单 ==========
-        function downloadMaterialsList() {
-            if (!patternData) return;
-            
-            const sortedColors = Object.values(patternData.colors).sort((a, b) => b.count - a.count);
-            const total = sortedColors.reduce((sum, c) => sum + c.count, 0);
-            
-            let content = '拼豆材料清单\n';
-            content += '================\n\n';
-            content += `品牌: ${patternData.brand}\n`;
-            content += `尺寸: ${patternData.width}×${patternData.height}\n`;
-            content += `总数量: ${total} 颗\n`;
-            content += `使用颜色: ${sortedColors.length} 种\n\n`;
-            content += '----------------\n';
-            content += '材料列表\n';
-            content += '----------------\n\n';
-            content += '色号\t颜色\t数量\n';
-            content += '----\t----\t----\n';
-            
-            sortedColors.forEach(color => {
-                content += `${color.id}\t${color.name}\t${color.count}\n`;
-            });
-            
-            content += '\n----------------\n';
-            content += `总计: ${total} 颗\n`;
-            
-            // 创建并下载文件
-            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-            const link = document.createElement('a');
-            link.download = `材料清单_${patternData.width}x${patternData.height}_${patternData.brand}.txt`;
+            link.download = `æææ¸å_${patternData.width}x${patternData.height}_${patternData.brand}.txt`;
             link.href = URL.createObjectURL(blob);
             link.click();
             URL.revokeObjectURL(link.href);
