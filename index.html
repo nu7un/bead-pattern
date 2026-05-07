@@ -138,11 +138,12 @@
         
         #fileInput {
             position: absolute;
-            width: 0;
-            height: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
-            overflow: hidden;
-            pointer-events: none;
+            cursor: pointer;
         }
         
         .preview-container {
@@ -414,12 +415,12 @@
         <div class="grid">
             <div class="card">
                 <div class="card-title">ð¤ ä¸ä¼ å¾ç</div>
-                <div class="upload-area" id="uploadArea">
+                <div class="upload-area" id="uploadArea" style="position:relative;">
                     <div class="upload-icon">ð¼ï¸</div>
                     <div class="upload-text">ææ½å¾çå°è¿é</div>
                     <div class="upload-hint">æç¹å»éæ©æä»¶ (æ¯æ JPG/PNG/WebPï¼æå¤§ 50MB)</div>
+                    <input type="file" id="fileInput" accept="image/*">
                 </div>
-                <input type="file" id="fileInput" accept="image/*">
                 <div class="preview-container" id="previewContainer">
                     <img id="previewImg" class="preview-img" alt="é¢è§">
                 </div>
